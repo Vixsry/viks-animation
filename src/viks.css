@@ -1,41 +1,41 @@
-/* src/viks.css */
 /* Fade Animations */
-[data-viks="fade"] { transition: opacity 400ms ease; }
-[data-viks="fade-up"] { transform: translateY(20px); }
-[data-viks="fade-down"] { transform: translateY(-20px); }
-[data-viks="fade-left"] { transform: translateX(-20px); }
-[data-viks="fade-right"] { transform: translateX(20px); }
-[data-viks="fade-up-right"] { transform: translate(20px, 20px); }
-[data-viks="fade-up-left"] { transform: translate(-20px, 20px); }
-[data-viks="fade-down-right"] { transform: translate(20px, -20px); }
-[data-viks="fade-down-left"] { transform: translate(-20px, -20px); }
+@keyframes viks-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes viks-fade-up { from { opacity: 0; transform: translate3d(0, 100%, 0); } to { opacity: 1; transform: none; } }
+@keyframes viks-fade-down { from { opacity: 0; transform: translate3d(0, -100%, 0); } to { opacity: 1; transform: none; } }
+@keyframes viks-fade-left { from { opacity: 0; transform: translate3d(-100%, 0, 0); } to { opacity: 1; transform: none; } }
+@keyframes viks-fade-right { from { opacity: 0; transform: translate3d(100%, 0, 0); } to { opacity: 1; transform: none; } }
 
 /* Flip Animations */
-[data-viks="flip-up"] { transform: rotateX(-90deg); }
-[data-viks="flip-down"] { transform: rotateX(90deg); }
-[data-viks="flip-left"] { transform: rotateY(-90deg); }
-[data-viks="flip-right"] { transform: rotateY(90deg); }
+@keyframes viks-flip-up { from { transform: perspective(400px) rotateX(90deg); } to { transform: perspective(400px) rotateX(0); } }
+@keyframes viks-flip-down { from { transform: perspective(400px) rotateX(-90deg); } to { transform: perspective(400px) rotateX(0); } }
+@keyframes viks-flip-left { from { transform: perspective(400px) rotateY(90deg); } to { transform: perspective(400px) rotateY(0); } }
+@keyframes viks-flip-right { from { transform: perspective(400px) rotateY(-90deg); } to { transform: perspective(400px) rotateY(0); } }
 
 /* Slide Animations */
-[data-viks="slide-up"] { transform: translateY(100%); }
-[data-viks="slide-down"] { transform: translateY(-100%); }
-[data-viks="slide-left"] { transform: translateX(100%); }
-[data-viks="slide-right"] { transform: translateX(-100%); }
+@keyframes viks-slide-up { from { transform: translate3d(0, 100%, 0); } to { transform: none; } }
+@keyframes viks-slide-down { from { transform: translate3d(0, -100%, 0); } to { transform: none; } }
+@keyframes viks-slide-left { from { transform: translate3d(-100%, 0, 0); } to { transform: none; } }
+@keyframes viks-slide-right { from { transform: translate3d(100%, 0, 0); } to { transform: none; } }
 
 /* Zoom Animations */
-[data-viks="zoom-in"] { transform: scale(0); }
-[data-viks="zoom-in-up"] { transform: scale(0) translateY(20px); }
-[data-viks="zoom-in-down"] { transform: scale(0) translateY(-20px); }
-[data-viks="zoom-in-left"] { transform: scale(0) translateX(-20px); }
-[data-viks="zoom-in-right"] { transform: scale(0) translateX(20px); }
-[data-viks="zoom-out"] { transform: scale(1.2); }
-[data-viks="zoom-out-up"] { transform: scale(1.2) translateY(20px); }
-[data-viks="zoom-out-down"] { transform: scale(1.2) translateY(-20px); }
-[data-viks="zoom-out-left"] { transform: scale(1.2) translateX(-20px); }
-[data-viks="zoom-out-right"] { transform: scale(1.2) translateX(20px); }
+@keyframes viks-zoom-in { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes viks-zoom-out { from { opacity: 0; transform: scale(1.2); } to { opacity: 1; transform: scale(1); } }
 
-/* Easing Classes */
-.ease { transition-timing-function: ease; }
-.ease-in { transition-timing-function: ease-in; }
-.ease-out { transition-timing-function: ease-out; }
-.ease-in-out { transition-timing-function: ease-in-out; }
+/* Animation Classes */
+.viks-init {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.viks-animate {
+  opacity: 1;
+}
+
+/* Animation Type Classes */
+.viks-fade { animation: viks-fade; }
+.viks-fade-up { animation: viks-fade-up; }
+.viks-fade-down { animation: viks-fade-down; }
+.viks-fade-left { animation: viks-fade-left; }
+.viks-fade-right { animation: viks-fade-right; }
+
+/* Similar classes for other animation types... */
