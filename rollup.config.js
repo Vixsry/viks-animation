@@ -1,4 +1,3 @@
-// rollup.config.js
 import typescript from '@rollup/plugin-typescript';
 
 export default {
@@ -12,8 +11,7 @@ export default {
     },
     {
       file: 'dist/viks.esm.js',
-      format: 'esm',
-      sourcemap: true
+      format: 'esm'
     }
   ],
   plugins: [
