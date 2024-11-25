@@ -1,5 +1,4 @@
-// src/viks.ts
-interface ViksOptions {
+interface VIKSOptions {
   disable?: boolean;
   startEvent?: string;
   initClassName?: string;
@@ -16,116 +15,74 @@ interface ViksOptions {
   anchorPlacement?: string;
 }
 
-class Viks {
-  private options: ViksOptions;
-  private observer: IntersectionObserver | null = null;
+class VIKS {
+  private static defaultOptions: VIKSOptions = {
+    disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'viks-init',
+    animatedClassName: 'viks-animate',
+    disableMutationObserver: false,
+    debounceDelay: 50,
+    throttleDelay: 99,
+    offset: 120,
+    delay: 0,
+    duration: 400,
+    easing: 'ease',
+    once: false,
+    mirror: false,
+    anchorPlacement: 'top-bottom'
+  };
 
-  constructor(options: ViksOptions = {}) {
-    this.options = {
-      disable: false,
-      startEvent: 'DOMContentLoaded',
-      initClassName: 'viks-init',
-      animatedClassName: 'viks-animate',
-      disableMutationObserver: false,
-      debounceDelay: 50,
-      throttleDelay: 99,
-      offset: 120,
-      delay: 0,
-      duration: 400,
-      easing: 'ease',
-      once: false,
-      mirror: false,
-      anchorPlacement: 'top-bottom',
-      ...options
-    };
+  private static options: VIKSOptions = { ...VIKS.defaultOptions };
 
-    this.init();
-  }
-
-  private init() {
-    document.addEventListener(this.options.startEvent, () => {
-      this.initializeElements();
-      this.createIntersectionObserver();
-    });
-  }
-
-  private initializeElements() {
-    const elements = document.querySelectorAll('[data-viks]');
-    elements.forEach(el => {
-      this.prepareElement(el);
-    });
-  }
-
-  private prepareElement(element: Element) {
-    const animationType = element.getAttribute('data-viks') || '';
-    const delay = parseInt(element.getAttribute('data-viks-delay') || '0');
-    const duration = parseInt(element.getAttribute('data-viks-duration') || this.options.duration.toString());
-    const easing = element.getAttribute('data-viks-easing') || this.options.easing;
-
-    element.classList.add(this.options.initClassName);
+  static init(customOptions: VIKSOptions = {}) {
+    this.options = { ...this.defaultOptions, ...customOptions };
     
-    this.setElementStyles(element, {
-      animationType,
-      delay,
-      duration,
-      easing
+    document.addEventListener(this.options.startEvent, () => {
+      this.initializeAnimations();
     });
   }
 
-  private setElementStyles(element: Element, config: {
-    animationType: string, 
-    delay: number, 
-    duration: number, 
-    easing: string
-  }) {
-    const styleElement = document.createElement('style');
-    styleElement.textContent = `
-      .${this.options.initClassName}[data-viks="${config.animationType}"] {
-        opacity: 0;
-        transition: all ${config.duration}ms ${config.easing} ${config.delay}ms;
-        transform: translate3d(0, 0, 0);
-      }
-      .${this.options.animatedClassName}[data-viks="${config.animationType}"] {
-        opacity: 1;
-      }
-    `;
-    document.head.appendChild(styleElement);
-  }
-
-  private createIntersectionObserver() {
-    const observerOptions = {
-      root: null,
-      rootMargin: `${this.options.offset}px`,
-      threshold: 0.1
-    };
-
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(this.options.animatedClassName);
-          
-          if (this.options.once) {
-            this.observer?.unobserve(entry.target);
+  private static initializeAnimations() {
+    const elements = document.querySelectorAll('[data-viks]');
+    
+    elements.forEach((element) => {
+      const animationType = element.getAttribute('data-viks') || '';
+      const duration = parseInt(element.getAttribute('data-viks-duration') || '') || this.options.duration;
+      const delay = parseInt(element.getAttribute('data-viks-delay') || '') || this.options.delay;
+      
+      element.classList.add(this.options.initClassName);
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(this.options.animatedClassName);
+            entry.target.classList.add(`viks-${animationType}`);
+            
+            (entry.target as HTMLElement).style.animationDuration = `${duration}ms`;
+            (entry.target as HTMLElement).style.animationDelay = `${delay}ms`;
+            (entry.target as HTMLElement).style.animationTimingFunction = this.options.easing;
+            
+            if (this.options.once) {
+              observer.unobserve(entry.target);
+            }
+          } else if (this.options.mirror) {
+            entry.target.classList.remove(this.options.animatedClassName);
+            entry.target.classList.remove(`viks-${animationType}`);
           }
-        } else if (this.options.mirror) {
-          entry.target.classList.remove(this.options.animatedClassName);
-        }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: `-${this.options.offset}px`
       });
-    }, observerOptions);
 
-    const elements = document.querySelectorAll(`[data-viks]:not(.${this.options.animatedClassName})`);
-    elements.forEach(el => this.observer?.observe(el));
+      observer.observe(element);
+    });
   }
 
-  public refresh() {
-    this.observer?.disconnect();
-    this.initializeElements();
-    this.createIntersectionObserver();
-  }
-
-  public static init(options?: ViksOptions) {
-    return new Viks(options);
+  static refresh() {
+    this.initializeAnimations();
   }
 }
 
-export default Viks;
+export default VIKS;
