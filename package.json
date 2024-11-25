@@ -1,19 +1,19 @@
 {
-  "name": "viks",
+  "name": "viks-animation",
   "version": "1.0.0",
-  "description": "Lightweight animation library for scroll-based animations",
+  "description": "Lightweight animation library for web projects",
   "main": "dist/viks.js",
   "types": "dist/viks.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "prepublish": "npm run build"
+    "dev": "rollup -c -w"
   },
-  "keywords": ["animation", "scroll", "javascript"],
+  "keywords": ["animation", "scroll", "library"],
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.0",
-    "rollup": "^2.60.0",
-    "typescript": "^4.5.2"
+    "rollup": "^2.70.0",
+    "typescript": "^4.6.2"
   }
 }
