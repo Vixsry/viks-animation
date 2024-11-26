@@ -1,4 +1,8 @@
+// rollup.config.js
+
 import typescript from '@rollup/plugin-typescript';
+import postcss from 'rollup-plugin-postcss';
+import { terser } from 'rollup-plugin-terser';
 
 export default {
   input: 'src/viks.ts',
@@ -11,10 +15,18 @@ export default {
     },
     {
       file: 'dist/viks.esm.js',
-      format: 'esm'
+      format: 'es',
+      sourcemap: true
     }
   ],
   plugins: [
-    typescript()
+    typescript({
+      tsconfig: './tsconfig.json'
+    }),
+    postcss({
+      extract: true,
+      minimize: true
+    }),
+    terser()
   ]
 };
