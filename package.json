@@ -1,19 +1,32 @@
 {
   "name": "viks-animation",
   "version": "1.0.0",
-  "description": "Lightweight animation library for web projects",
+  "description": "Simple and lightweight animation library",
   "main": "dist/viks.js",
+  "module": "dist/viks.esm.js",
   "types": "dist/viks.d.ts",
+  "style": "dist/viks.css",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "test": "jest"
   },
-  "keywords": ["animation", "scroll", "library"],
+  "keywords": [
+    "animation",
+    "scroll",
+    "css",
+    "javascript"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.0",
-    "rollup": "^2.70.0",
-    "typescript": "^4.6.2"
-  }
+    "rollup": "^2.60.0",
+    "typescript": "^4.5.2",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "files": [
+    "dist"
+  ]
 }
