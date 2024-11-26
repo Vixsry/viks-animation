@@ -1,41 +1,45 @@
-/* Fade Animations */
-@keyframes viks-fade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes viks-fade-up { from { opacity: 0; transform: translate3d(0, 100%, 0); } to { opacity: 1; transform: none; } }
-@keyframes viks-fade-down { from { opacity: 0; transform: translate3d(0, -100%, 0); } to { opacity: 1; transform: none; } }
-@keyframes viks-fade-left { from { opacity: 0; transform: translate3d(-100%, 0, 0); } to { opacity: 1; transform: none; } }
-@keyframes viks-fade-right { from { opacity: 0; transform: translate3d(100%, 0, 0); } to { opacity: 1; transform: none; } }
+/* src/viks.css */
 
-/* Flip Animations */
-@keyframes viks-flip-up { from { transform: perspective(400px) rotateX(90deg); } to { transform: perspective(400px) rotateX(0); } }
-@keyframes viks-flip-down { from { transform: perspective(400px) rotateX(-90deg); } to { transform: perspective(400px) rotateX(0); } }
-@keyframes viks-flip-left { from { transform: perspective(400px) rotateY(90deg); } to { transform: perspective(400px) rotateY(0); } }
-@keyframes viks-flip-right { from { transform: perspective(400px) rotateY(-90deg); } to { transform: perspective(400px) rotateY(0); } }
-
-/* Slide Animations */
-@keyframes viks-slide-up { from { transform: translate3d(0, 100%, 0); } to { transform: none; } }
-@keyframes viks-slide-down { from { transform: translate3d(0, -100%, 0); } to { transform: none; } }
-@keyframes viks-slide-left { from { transform: translate3d(-100%, 0, 0); } to { transform: none; } }
-@keyframes viks-slide-right { from { transform: translate3d(100%, 0, 0); } to { transform: none; } }
-
-/* Zoom Animations */
-@keyframes viks-zoom-in { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }
-@keyframes viks-zoom-out { from { opacity: 0; transform: scale(1.2); } to { opacity: 1; transform: scale(1); } }
-
-/* Animation Classes */
-.viks-init {
+[data-viks] {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition-duration: var(--viks-duration);
+  transition-timing-function: var(--viks-easing);
+  transition-delay: var(--viks-delay);
 }
 
-.viks-animate {
-  opacity: 1;
-}
+/* Fade animations */
+[data-viks="fade"].viks-animate { opacity: 1; }
+[data-viks="fade-up"] { transform: translate3d(0, 100px, 0); }
+[data-viks="fade-up"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
+[data-viks="fade-down"] { transform: translate3d(0, -100px, 0); }
+[data-viks="fade-down"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
+[data-viks="fade-left"] { transform: translate3d(-100px, 0, 0); }
+[data-viks="fade-left"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
+[data-viks="fade-right"] { transform: translate3d(100px, 0, 0); }
+[data-viks="fade-right"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
 
-/* Animation Type Classes */
-.viks-fade { animation: viks-fade; }
-.viks-fade-up { animation: viks-fade-up; }
-.viks-fade-down { animation: viks-fade-down; }
-.viks-fade-left { animation: viks-fade-left; }
-.viks-fade-right { animation: viks-fade-right; }
+/* Flip animations */
+[data-viks="flip-up"] { transform: perspective(2500px) rotateX(-100deg); }
+[data-viks="flip-up"].viks-animate { transform: perspective(2500px) rotateX(0); opacity: 1; }
+[data-viks="flip-down"] { transform: perspective(2500px) rotateX(100deg); }
+[data-viks="flip-down"].viks-animate { transform: perspective(2500px) rotateX(0); opacity: 1; }
 
-/* Similar classes for other animation types... */
+/* Slide animations */
+[data-viks="slide-up"] { transform: translate3d(0, 100%, 0); }
+[data-viks="slide-up"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
+[data-viks="slide-down"] { transform: translate3d(0, -100%, 0); }
+[data-viks="slide-down"].viks-animate { transform: translate3d(0, 0, 0); opacity: 1; }
+
+/* Zoom animations */
+[data-viks="zoom-in"] { transform: scale(.6); }
+[data-viks="zoom-in"].viks-animate { transform: scale(1); opacity: 1; }
+[data-viks="zoom-out"] { transform: scale(1.2); }
+[data-viks="zoom-out"].viks-animate { transform: scale(1); opacity: 1; }
+
+/* Easing functions */
+.ease { transition-timing-function: ease; }
+.ease-in { transition-timing-function: ease-in; }
+.ease-out { transition-timing-function: ease-out; }
+.ease-in-out { transition-timing-function: ease-in-out; }
+.ease-in-back { transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+.ease-out-back { transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
