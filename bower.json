@@ -1,0 +1,24 @@
+{
+  "name": "viks-animation",
+  "version": "1.0.0",
+  "main": [
+    "src/js/viks-animation.min.js",
+    "src/css/viks-animation.min.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT",
+  "authors": [
+    "Vixsry"
+  ],
+  "description": "A lightweight animation library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vixsry/viks-animation.git"
+  },
+  "keywords": [
+    "animation",
+    "viks",
+    "library"
+  ]
+}
