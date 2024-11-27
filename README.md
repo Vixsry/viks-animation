@@ -39,6 +39,8 @@ Inspired by the brilliance of AOS.js, I embarked on a journey to create a simple
 </div>
 
 ---
+This project is a modification of AOS.js (https://github.com/michalsnik/aos) under the MIT license. Original AOS.js license: ------------------------------------ /* MIT License Copyright (c) 2019 Michał Sajnóg Permission is hereby granted, free of charge, to any person who obtains...
+---
 
 ## 📋 Table of Contents
 <div align="center">
