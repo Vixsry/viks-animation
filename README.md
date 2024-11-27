@@ -47,17 +47,68 @@
 
 </div>
 
+[Previous header content remains the same until the Installation section]
+
 ## 🚀 Installation
 
-```html
-<!-- Add to your HTML head -->
-<link rel="stylesheet" href="path/to/viks-animation.css">
+<div align="center">
 
-<!-- Add before closing body tag -->
+[![NPM](https://img.shields.io/badge/NPM-black?style=for-the-badge&logo=npm&logoColor=aqua)](#npm)
+[![Yarn](https://img.shields.io/badge/Yarn-aqua?style=for-the-badge&logo=yarn&logoColor=black)](#yarn)
+[![Bower](https://img.shields.io/badge/Bower-black?style=for-the-badge&logo=bower&logoColor=aqua)](#bower)
+[![CDN](https://img.shields.io/badge/CDN-aqua?style=for-the-badge&logo=jsdelivr&logoColor=black)](#cdn)
+
+</div>
+
+### Using Package Managers
+
+#### NPM
+```bash
+npm install viks --save
+```
+
+#### Yarn
+```bash
+yarn add viks
+```
+
+#### Bower
+```bash
+bower install viks --save
+```
+
+### CDN Sources
+
+Add to your HTML:
+
+```html
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/css/viks-animation.min.css" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/js/main.js"></script>
+```
+
+### Manual Installation
+
+1. Download the CSS and JavaScript files:
+   - `viks-animation.css`
+   - `viks-animation.js`
+
+2. Include the files in your HTML:
+```html
+<link rel="stylesheet" href="path/to/viks-animation.css">
 <script src="path/to/viks-animation.js"></script>
+```
+
+3. Initialize VIKS:
+```html
 <script>
   VIKS.init();
 </script>
+```
+
+[Rest of the README content remains the same]
 ```
 
 ## 🎯 Basic Usage
