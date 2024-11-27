@@ -39,9 +39,12 @@ Inspired by the brilliance of AOS.js, I embarked on a journey to create a simple
 </div>
 
 ---
+## Overview
+This project is a modification of [AOS.js](https://github.com/michalsnik/aos) (Animate On Scroll) by Michał Sajnóg, which is used for scroll animations on websites. It provides simple and customizable animations triggered when an element enters the viewport.
+
 ## MODIFICATION
-This project is a modification of AOS.js (https://github.com/michalsnik/aos) under the MIT license. Original AOS.js license:
-MIT License Copyright (c) 2019 Michał Sajnóg Permission is hereby granted, free of charge, to any person who obtains...
+This project is a modification of [AOS.js](https://github.com/michalsnik/aos) under the MIT license. The original license for AOS.js is as follows:
+
 ---
 
 ## 📋 Table of Contents
