@@ -132,32 +132,17 @@ Add to your HTML:
 
 </div>
 ---
-# Bounce Animation Collection
+### NEW ANIMATION
 
-This document lists various bounce animation classes that can be used for web projects. These animations provide a simple way to create engaging and dynamic effects for elements on your webpage.
+### Bounce Animation
+-bounce'
+- 'bounce-up'
+- 'bounce-right'
+- 'bounce-left'
+- 'bounce-down'
+___
 
-## Bounce Animation Classes
 
-### Available Animations
-
-- **bounce**: A basic bounce animation that makes an element bounce in place.
-- **bounce-up**: Makes an element bounce upward.
-- **bounce-right**: Makes an element bounce to the right.
-- **bounce-left**: Makes an element bounce to the left.
-- **bounce-down**: Makes an element bounce downward.
-
-### How to Use
-
-To apply these animations, add the respective class to your HTML element and ensure that the necessary CSS or animation library is included in your project.
-
-Example:
-```html
-<div class="bounce">Bounce Animation</div>
-<div class="bounce-up">Bounce Up Animation</div>
-<div class="bounce-right">Bounce Right Animation</div>
-<div class="bounce-left">Bounce Left Animation</div>
-<div class="bounce-down">Bounce Down Animation</div>
----
 
 
 ### Fade Animations
