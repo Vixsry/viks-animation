@@ -131,10 +131,8 @@ Add to your HTML:
 [![Zoom](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#zoom-animations)
 
 </div>
----
-### NEW ANIMATION
 
-### Bounce Animation
+### NEW ANIMATION
 - 'bounce'
 - 'bounce-up'
 - 'bounce-right'
