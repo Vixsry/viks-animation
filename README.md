@@ -133,11 +133,11 @@ Add to your HTML:
 </div>
 
 ### Bounce Animation New
--'bounce'
--'bounce-up'
--'bounce-right'
--'bounce-left'
--'bounce-down'
+-bounce
+-bounce-up
+-bounce-right
+-bounce-left
+-bounce-down
 
 ### Fade Animations
 - `fade`
