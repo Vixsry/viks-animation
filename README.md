@@ -97,9 +97,6 @@ Add to your HTML:
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/js/main.js"></script>
-<script>
-  VIKS.init();
-</script>
 ```
 
 ### Manual Installation
