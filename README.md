@@ -19,6 +19,8 @@
 <div align="center">
   <sub>Created with ❤️ by
   <a href="https://github.com/Vixsry">Vixsry</a>
+
+[buying me a coffee](https://ko-fi.com/viksry)!
 </div>
 
 ---
