@@ -110,14 +110,6 @@ Add to your HTML:
 <link rel="stylesheet" href="path/to/viks-animation.css">
 <script src="path/to/viks-animation.js"></script>
 ```
-
-3. Initialize VIKS:
-```html
-<script>
-  VIKS.init();
-</script>
-```
-
 [Rest of the README content remains the same]
 ```
 
