@@ -135,7 +135,7 @@ Add to your HTML:
 ### NEW ANIMATION
 
 ### Bounce Animation
--bounce'
+- 'bounce'
 - 'bounce-up'
 - 'bounce-right'
 - 'bounce-left'
