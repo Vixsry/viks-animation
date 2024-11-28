@@ -19,7 +19,7 @@
 <div align="center">
   <sub>Created with ❤️ by
   <a href="https://github.com/Vixsry">Vixsry</a>
-<p>Support My Work☕</p>
+ Support My Work☕
 [buying me a coffee](https://ko-fi.com/viksry)!
 </div>
 
