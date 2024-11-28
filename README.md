@@ -19,7 +19,6 @@
 <div align="center">
   <sub>Created with ❤️ by
   <a href="https://github.com/Vixsry">Vixsry</a>
-[Support My Work buying me a coffee☕](https://ko-fi.com/viksry)!
 </div>
 
 ---
@@ -237,6 +236,24 @@ or
 - `ease-in-out-quart`
 
 </details>
+
+<div align="center">
+
+# ☕ Support My Work
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Buy%20Me%20A%20Coffee&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=gradient" />
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F77222&width=435&lines=Support+my+work;Buy+me+a+coffee+☕)](https://ko-fi.com/viksry)
+
+## 💖 If you find my work helpful, consider buying me a coffee!
+
+<a href="https://ko-fi.com/viksry">
+  <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200">
+</a>
+
+Your support helps me continue creating and maintaining projects! ✨
+
+</div>
 
 ## 🔄 Advanced Usage
 
