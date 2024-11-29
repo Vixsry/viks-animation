@@ -63,23 +63,6 @@ Inspired by the brilliance of AOS.js, I embarked on a journey to create a simple
 
 </div>
 
-### Using Package Managers
-
-#### NPM
-```bash
-npm install viks --save
-```
-
-#### Yarn
-```bash
-yarn add viks
-```
-
-#### Bower
-```bash
-bower install viks --save
-```
-
 ### CDN Sources
 
 Add to your HTML:
