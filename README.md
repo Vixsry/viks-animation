@@ -86,10 +86,10 @@ Add to your HTML:
 
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/css/viks-animation.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.css" rel="stylesheet">
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.js"></script>
 ```
 
 ### Manual Installation
