@@ -2,8 +2,8 @@
   "name": "viks-animation",
   "version": "1.0.0",
   "main": [
-    "src/js/viks-animation.min.js",
-    "src/css/viks-animation.min.css"
+    "dist/viks-viks.min.js",
+    "dist/viks-viks.min.css"
   ],
   "dependencies": {},
   "devDependencies": {},
