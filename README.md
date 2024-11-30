@@ -23,7 +23,7 @@
 
 ---
 ## Our Story:
-Inspired by the brilliance of AOS.js, I embarked on a journey to create a simpler, more streamlined version of animation code. What started as a personal exploration turned into a project I’m proud to share. There’s no intention to compete, only to create something meaningful for my own use. But if you find it valuable, feel free to make it yours and use it as you see fit.
+Viks Animation is a modern animation library designed to simplify the creation of high-quality animations. With its simple and intuitive code structure, this library enables anyone, from beginners to professional developers, to create smooth, responsive, and visually appealing animations. Its main focus is to deliver an optimal user experience with lightweight performance without compromising visual quality, making it an ideal choice for various digital projects, from websites to interactive applications.
 
 ---
 ## 📱 Connect With Developer
