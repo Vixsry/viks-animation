@@ -55,6 +55,7 @@ Viks Animation is a modern animation library designed to simplify the creation o
 ## 🚀 Installation
 
 <div align="center">
+
 [![CDN](https://img.shields.io/badge/CDN-aqua?style=for-the-badge&logo=jsdelivr&logoColor=black)](#cdn)
 
 </div>
