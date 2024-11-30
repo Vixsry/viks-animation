@@ -22,7 +22,7 @@
 </div>
 
 ---
-## Our Story:
+## About
 Viks Animation is a modern animation library designed to simplify the creation of high-quality animations. With its simple and intuitive code structure, this library enables anyone, from beginners to professional developers, to create smooth, responsive, and visually appealing animations. Its main focus is to deliver an optimal user experience with lightweight performance without compromising visual quality, making it an ideal choice for various digital projects, from websites to interactive applications.
 
 ---
