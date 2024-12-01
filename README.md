@@ -87,17 +87,7 @@ Add to your HTML:
 ```
 
 
-```addjavascript to html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viks Animation Library</title>
-</head>
-<body>
-    <h1>Wellcome Viks Animation</h1>
-    <p>A lightweight JavaScript animation library that brings your web pages to life with smooth, customizable scroll animations.</p>
+```Add Java Script To HTML
 
 <!-- VIKS ANIMATION -->
 <script>
@@ -111,8 +101,6 @@ const viks = new ViksAnimation({
   threshold: 0.2,     // ratio of element's visibility needed to trigger animation
 });
 </script>
-</body>
-</html>
 ```
 
 ## ✨ Available Animations
