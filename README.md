@@ -101,7 +101,7 @@ Add to your HTML:
     <h1>Wellcome Viks Animation</h1>
     <p>A lightweight JavaScript animation library that brings your web pages to life with smooth, customizable scroll animations.</p>
 
-<!-- VIKS ANIMATION
+<!-- VIKS ANIMATION -->
 <script>
 const viks = new ViksAnimation({
   offset: 120,        // offset (in px) from the original trigger point
