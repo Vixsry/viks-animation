@@ -23,7 +23,9 @@
 
 ---
 ## About Us
+
 A modern JavaScript animation library designed to create smooth, lightweight, and customizable scroll animations for various web applications. Built with a focus on simplicity and efficiency, this library delivers an optimal experience without compromising performance.
+
 ---
 ## 📱 Connect With Developer
 <div align="center">
