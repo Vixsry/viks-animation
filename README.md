@@ -86,7 +86,8 @@ Add to your HTML:
 [Rest of the README content remains the same]
 ```
 
-## Costom Install JS
+## Custom Initialization
+---
 
 ```javascript
 
