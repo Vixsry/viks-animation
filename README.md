@@ -83,11 +83,9 @@ Add to your HTML:
 <link rel="stylesheet" href="path/to/viks.css">
 <script src="path/to/viks.js"></script>
 ```
-[Rest of the README content remains the same]
+[Custom Initialization]
 ```
 
-## Custom Initialization
----
 
 ```javascript
 
