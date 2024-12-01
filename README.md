@@ -22,9 +22,7 @@
 </div>
 
 ---
-## Our Story:
-Inspired by the brilliance of AOS.js, I embarked on a journey to create a simpler, more streamlined version of animation code. What started as a personal exploration turned into a project I’m proud to share. There’s no intention to compete, only to create something meaningful for my own use. But if you find it valuable, feel free to make it yours and use it as you see fit.
-
+A modern JavaScript animation library designed to create smooth, lightweight, and customizable scroll animations for various web applications. Built with a focus on simplicity and efficiency, this library delivers an optimal experience without compromising performance.
 ---
 ## 📱 Connect With Developer
 <div align="center">
