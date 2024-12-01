@@ -70,7 +70,7 @@ Add to your HTML:
 
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.css">
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.js"></script>
