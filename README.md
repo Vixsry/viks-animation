@@ -78,13 +78,13 @@ Add to your HTML:
 ### Manual Installation
 
 1. Download the CSS and JavaScript files:
-   - `viks-animation.css`
-   - `viks-animation.js`
+   - `viks.css`
+   - `viks.js`
 
 2. Include the files in your HTML:
 ```html
-<link rel="stylesheet" href="path/to/viks-animation.css">
-<script src="path/to/viks-animation.js"></script>
+<link rel="stylesheet" href="path/to/viks.css">
+<script src="path/to/viks.js"></script>
 ```
 [Rest of the README content remains the same]
 ```
