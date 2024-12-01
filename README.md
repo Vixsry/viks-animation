@@ -75,8 +75,8 @@ Add to your HTML:
 ### Manual Installation
 
 1. Download the CSS and JavaScript files:
-   - `viks-animation.css`
-   - `viks-animation.js`
+   - `viks.css`
+   - `viks.js`
 
 2. Include the files in your HTML:
 ```html
@@ -86,12 +86,35 @@ Add to your HTML:
 [Rest of the README content remains the same]
 ```
 
-## 🎯 Basic Usage
+## Here's how to use the library:
 
-```html
-<div data-viks="fade-up">
-  Your content here
-</div>
+```javascript add index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viks Animation Library</title>
+</head>
+<body>
+    <h1>Wellcome Viks Animation</h1>
+    <p>A lightweight JavaScript animation library that brings your web pages to life with smooth, customizable scroll animations.</p>
+
+<!-- VIKS ANIMATION
+<script>
+const viks = new ViksAnimation({
+  offset: 120,        // offset (in px) from the original trigger point
+  delay: 0,           // values from 0 to 3000, with step 50ms
+  duration: 400,      // values from 0 to 3000, with step 50ms
+  easing: 'ease',     // default easing for animations
+  once: false,        // whether animation should happen only once
+  mirror: true,       // whether elements should animate out while scrolling past them
+  threshold: 0.2,     // ratio of element's visibility needed to trigger animation
+});
+</script>
+</body>
+</html>
 ```
 
 ## ✨ Available Animations
