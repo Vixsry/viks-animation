@@ -1,98 +1,140 @@
-<h1 align="center">VIKS Animation Library</h1>
+<h1 align="center"><span style="color: aqua">VIKS</span> Animation Library</h1>
 
 <p align="center">
-  <img src="./assets/logo.png" alt="VIKS Animation Logo" width="200"/>
+  <img src="https://img.shields.io/badge/JavaScript-Library-aqua?style=for-the-badge&logoColor=black" alt="JavaScript Library Badge"/>
 </p>
 
 <div align="center">
   
-[![Version](https://img.shields.io/github/package-json/v/Vixsry/viks-animation?style=flat-square&color=blue)](https://github.com/Vixsry/viks-animation/releases)
-[![License](https://img.shields.io/github/license/Vixsry/viks-animation?style=flat-square&color=blue)](/LICENSE)
-[![Downloads](https://img.shields.io/npm/dm/viks-animation?style=flat-square&color=blue)](https://www.npmjs.com/package/viks-animation)
-[![Stars](https://img.shields.io/github/stars/Vixsry/viks-animation?style=flat-square&color=blue)](https://github.com/Vixsry/viks-animation/stargazers)
-[![Issues](https://img.shields.io/github/issues/Vixsry/viks-animation?style=flat-square&color=blue)](https://github.com/Vixsry/viks-animation/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Vixsry/viks-animation?style=flat-square&color=blue)](https://github.com/Vixsry/viks-animation/pulls)
+![Version](https://img.shields.io/badge/version-1.0.0-aqua?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-black?style=flat-square)
+![Downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-aqua?style=flat-square)
 
 </div>
 
 <div align="center">
-  <strong>A lightweight and powerful JavaScript animation library for creating smooth scroll-triggered animations</strong>
+  <strong>A lightweight JavaScript library for smooth and engaging scroll animations</strong>
 </div>
 
-<br />
+<div align="center">
+  <sub>Created with ❤️ by
+  <a href="https://github.com/Vixsry">Vixsry</a>
+</div>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#documentation">Documentation</a> •
-  <a href="#examples">Examples</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#support">Support</a>
-</p>
+---
+## Our Story:
+Inspired by the brilliance of AOS.js, I embarked on a journey to create a simpler, more streamlined version of animation code. What started as a personal exploration turned into a project I’m proud to share. There’s no intention to compete, only to create something meaningful for my own use. But if you find it valuable, feel free to make it yours and use it as you see fit.
 
-## 🚀 Key Features
+---
+## 📱 Connect With Developer
+<div align="center">
+  
+[![Email](https://img.shields.io/badge/Email-aqua?style=for-the-badge&logo=gmail&logoColor=black)](mailto:viksry@proton.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=aqua)](https://www.linkedin.com/in/viksry)
+[![Instagram](https://img.shields.io/badge/Instagram-aqua?style=for-the-badge&logo=instagram&logoColor=black)](https://www.instagram.com/viksry12)
+[![TikTok](https://img.shields.io/badge/TikTok-black?style=for-the-badge&logo=tiktok&logoColor=aqua)](https://www.tiktok.com/@viksry)
+[![Threads](https://img.shields.io/badge/Threads-aqua?style=for-the-badge&logo=threads&logoColor=black)](https://www.threads.net/@viksry12)
+[![Facebook](https://img.shields.io/badge/Facebook-black?style=for-the-badge&logo=facebook&logoColor=aqua)](https://www.facebook.com/share/19aKzAtBeZ/)
 
-- 📦 Zero dependencies
-- 🎯 Simple HTML attribute-based implementation
-- 🎨 Rich animation library with 30+ preset animations
-- ⚡ High-performance scroll detection using Intersection Observer
-- 📱 Fully responsive and mobile-friendly
-- 🔧 Highly customizable with extensive configuration options
-- 🌐 Cross-browser compatibility
-- 🎮 Easy custom animation creation
-- 📄 Comprehensive documentation
-- 🤝 Active community and maintenance
+</div>
 
-## 📥 Installation
+---
 
-**NPM**
+## 📋 Table of Contents
+<div align="center">
+
+[![Installation](https://img.shields.io/badge/Installation-aqua?style=for-the-badge&logoColor=black)](#installation)
+[![Usage](https://img.shields.io/badge/Usage-black?style=for-the-badge&logoColor=aqua)](#basic-usage)
+[![Animations](https://img.shields.io/badge/Animations-aqua?style=for-the-badge&logoColor=black)](#available-animations)
+[![Config](https://img.shields.io/badge/Configuration-black?style=for-the-badge&logoColor=aqua)](#configuration)
+
+</div>
+
+[Previous header content remains the same until the Installation section]
+
+## 🚀 Installation
+
+<div align="center">
+
+[![NPM](https://img.shields.io/badge/NPM-black?style=for-the-badge&logo=npm&logoColor=aqua)](#npm)
+[![Yarn](https://img.shields.io/badge/Yarn-aqua?style=for-the-badge&logo=yarn&logoColor=black)](#yarn)
+[![Bower](https://img.shields.io/badge/Bower-black?style=for-the-badge&logo=bower&logoColor=aqua)](#bower)
+[![CDN](https://img.shields.io/badge/CDN-aqua?style=for-the-badge&logo=jsdelivr&logoColor=black)](#cdn)
+
+</div>
+
+### Using Package Managers
+
+#### NPM
 ```bash
-npm install viks-animation
+npm install viks --save
 ```
 
-**Yarn**
+#### Yarn
 ```bash
-yarn add viks-animation
+yarn add viks
 ```
 
-**CDN**
-```html
-<script src="https://cdn.jsdelivr.net/npm/viks-animation@latest/dist/viks-animation.min.js"></script>
+#### Bower
+```bash
+bower install viks --save
 ```
 
-## 🎯 Quick Start
+### CDN Sources
 
-### 1. Initialize the Library
-
-```javascript
-const viks = new ViksAnimation({
-  offset: 120,        // offset (in px) from the original trigger point
-  delay: 0,           // values from 0 to 3000, with step 50ms
-  duration: 400,      // values from 0 to 3000, with step 50ms
-  easing: 'ease',     // default easing for animations
-  once: false,        // whether animation should happen only once
-  mirror: true,       // whether elements should animate out while scrolling past them
-  threshold: 0.2      // ratio of element's visibility needed to trigger animation
-});
-```
-
-### 2. Add Animations to HTML
+Add to your HTML:
 
 ```html
-<div viks-animation="fade-up" 
-     viks-duration="800" 
-     viks-delay="200" 
-     viks-easing="ease-out">
-  Content here
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/css/viks-animation.min.css" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/js/main.js"></script>
+```
+
+### Manual Installation
+
+1. Download the CSS and JavaScript files:
+   - `viks-animation.css`
+   - `viks-animation.js`
+
+2. Include the files in your HTML:
+```html
+<link rel="stylesheet" href="path/to/viks-animation.css">
+<script src="path/to/viks-animation.js"></script>
+```
+[Rest of the README content remains the same]
+```
+
+## 🎯 Basic Usage
+
+```html
+<div data-viks="fade-up">
+  Your content here
 </div>
 ```
 
-## 📚 Documentation
+## ✨ Available Animations
 
-### Available Animations
+<div align="center">
 
-#### Fade Animations
+[![Fade](https://img.shields.io/badge/Fade-Animations-aqua?style=flat-square&logoColor=black)](#fade-animations)
+[![Flip](https://img.shields.io/badge/Flip-Animations-black?style=flat-square&logoColor=aqua)](#flip-animations)
+[![Slide](https://img.shields.io/badge/Slide-Animations-aqua?style=flat-square&logoColor=black)](#slide-animations)
+[![Zoom](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#zoom-animations)
+
+</div>
+
+
+### New Animation
+- `bounce`
+- `bounce-up`
+- `bounce-down`
+- `bounce-left`
+- `bounceright`
+
+
+### Fade Animations
 - `fade`
 - `fade-up`
 - `fade-down`
@@ -103,90 +145,166 @@ const viks = new ViksAnimation({
 - `fade-down-right`
 - `fade-down-left`
 
-[View all animations in the documentation →](https://github.com/Vixsry/viks-animation/wiki/Animations)
+### Flip Animations
+- `flip-up`
+- `flip-down`
+- `flip-left`
+- `flip-right`
 
-### Configuration Options
+### Slide Animations
+- `slide-up`
+- `slide-down`
+- `slide-left`
+- `slide-right`
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| offset | number | 120 | Offset from trigger point (px) |
-| delay | number | 0 | Animation delay (0-3000ms) |
-| duration | number | 400 | Animation duration (0-3000ms) |
-| easing | string | 'ease' | Animation timing function |
-| once | boolean | false | Run animation only once |
-| mirror | boolean | true | Reverse animation on scroll past |
-| threshold | number | 0.2 | Visibility ratio to trigger |
+### Zoom Animations
+- `zoom-in`
+- `zoom-in-up`
+- `zoom-in-down`
+- `zoom-in-left`
+- `zoom-in-right`
+- `zoom-out`
+- `zoom-out-up`
+- `zoom-out-down`
+- `zoom-out-left`
+- `zoom-out-right`
 
-[View full configuration documentation →](https://github.com/Vixsry/viks-animation/wiki/Configuration)
+## ⚙️ Configuration
 
-## 🎨 Examples
+### Delay
+```html
+<div data-viks="fade-up" data-viks-delay="1000">
+  1 second delay
+</div>
+```
+or
+```html
+<div data-viks="fade-up delay-1000">
+  1 second delay
+</div>
+```
 
-View our collection of examples and use cases:
+### Duration
+```html
+<div data-viks="fade-up" data-viks-duration="2000">
+  2 seconds duration
+</div>
+```
+or
+```html
+<div data-viks="fade-up duration-2000">
+  2 seconds duration
+</div>
+```
 
-- [Basic Usage](examples/basic.html)
-- [Advanced Animations](examples/advanced.html)
-- [Custom Animations](examples/custom.html)
-- [Performance Optimization](examples/performance.html)
+### Easing Functions
+```html
+<div data-viks="fade-up" data-viks-easing="ease-out">
+  Ease-out easing
+</div>
+```
+
+<details>
+<summary>Available Easing Functions</summary>
+
+- `linear`
+- `ease`
+- `ease-in`
+- `ease-out`
+- `ease-in-out`
+- `ease-in-back`
+- `ease-out-back`
+- `ease-in-out-back`
+- `ease-in-sine`
+- `ease-out-sine`
+- `ease-in-out-sine`
+- `ease-in-quad`
+- `ease-out-quad`
+- `ease-in-out-quad`
+- `ease-in-cubic`
+- `ease-out-cubic`
+- `ease-in-out-cubic`
+- `ease-in-quart`
+- `ease-out-quart`
+- `ease-in-out-quart`
+
+</details>
+
+<div align="center">
+
+# ☕ Support My Work
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Buy%20Me%20A%20Coffee&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=gradient" />
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F77222&width=435&lines=Support+my+work;Buy+me+a+coffee+☕)](https://ko-fi.com/viksry)
+
+## 💖 If you find my work helpful, consider buying me a coffee!
+
+<a href="https://ko-fi.com/viksry">
+  <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200">
+</a>
+
+Your support helps me continue creating and maintaining projects! ✨
+
+</div>
+
+## 🔄 Advanced Usage
+
+### Combining Multiple Attributes
+```html
+<div data-viks="fade-up delay-1000 duration-2000 easing-ease-out">
+  Multiple attributes combination
+</div>
+```
+
+### Control Scroll Animations
+```html
+<!-- Disable animations when scrolling up -->
+<div data-viks="fade-up" data-viks-animation-top="off">
+  No animation on upscroll
+</div>
+
+<!-- Disable animations when scrolling down -->
+<div data-viks="fade-up" data-viks-animation-bottom="off">
+  No animation on downscroll
+</div>
+```
+
+## 🌐 Browser Support
+
+<div align="center">
+
+![Chrome](https://img.shields.io/badge/Chrome-Latest-aqua?style=flat-square&logo=google-chrome&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-Latest-aqua?style=flat-square&logo=firefox&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-Latest-aqua?style=flat-square&logo=safari&logoColor=white)
+![Edge](https://img.shields.io/badge/Edge-Latest-aqua?style=flat-square&logo=microsoft-edge&logoColor=white)
+![Opera](https://img.shields.io/badge/Opera-Latest-aqua?style=flat-square&logo=opera&logoColor=white)
+
+</div>
+
+## 🎮 Demo
+See the full demo in the [viks-animation-demo.html](./viks-animation-demo.html) file.
+
+## 📝 License
+This project is [MIT](./LICENSE) licensed.
 
 ## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 💡 Support
-
-### Documentation
-- [Full Documentation](https://github.com/Vixsry/viks-animation/wiki)
-- [API Reference](https://github.com/Vixsry/viks-animation/wiki/API)
-- [FAQ](https://github.com/Vixsry/viks-animation/wiki/FAQ)
-
-### Community
-- [GitHub Discussions](https://github.com/Vixsry/viks-animation/discussions)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/viks-animation)
-
-### Social Media
-
-<div align="center">
-
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/viksry)
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viksry)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vixsry)
-[![Dev.to](https://img.shields.io/badge/dev.to-%230A0A0A.svg?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/viksry)
-
-</div>
-
-### Support My Work
-
-<div align="center">
-
-[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/viksry)
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/viksry)
-[![GitHub Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/Vixsry)
-
-</div>
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-- [All Contributors](CONTRIBUTORS.md)
+Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ---
 
 <div align="center">
 
-**[Website](https://viks-animation.js.org)** • 
-**[Documentation](https://github.com/Vixsry/viks-animation/wiki)** • 
-**[Releases](https://github.com/Vixsry/viks-animation/releases)** • 
-**[Issues](https://github.com/Vixsry/viks-animation/issues)**
+[![Portfolio](https://img.shields.io/badge/Portfolio-aqua?style=for-the-badge&logo=github&logoColor=black)](https://vixsry.github.io/portfolio/)
+[![Star](https://img.shields.io/badge/Star-black?style=for-the-badge&logo=github&logoColor=aqua)](https://github.com/Vixsry/viks-animation)
+
+<h3><span style="color: aqua">✨ "Bringing Life to Web Elements" ✨</span></h3>
+
+</div>
+
+---
+
+<div align="center">
 
 Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
