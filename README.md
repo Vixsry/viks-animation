@@ -173,34 +173,22 @@ Add to your HTML:
 
 ### Delay
 ```html
-<div data-viks="fade-up" data-viks-delay="1000">
-  1 second delay
-</div>
-```
-or
-```html
-<div data-viks="fade-up delay-1000">
-  1 second delay
+<div viks-animation="fade-up" viks-delay="200">
+  Content here
 </div>
 ```
 
 ### Duration
 ```html
-<div data-viks="fade-up" data-viks-duration="2000">
-  2 seconds duration
-</div>
-```
-or
-```html
-<div data-viks="fade-up duration-2000">
-  2 seconds duration
+<div viks-animation="fade-up"viks-duration="800">
+  Content here
 </div>
 ```
 
 ### Easing Functions
 ```html
-<div data-viks="fade-up" data-viks-easing="ease-out">
-  Ease-out easing
+<div viks-animation="fade-up" viks-easing="ease-out">
+  Content here
 </div>
 ```
 
