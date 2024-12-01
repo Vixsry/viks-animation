@@ -86,9 +86,9 @@ Add to your HTML:
 [Rest of the README content remains the same]
 ```
 
-Here's how to use the library:
+## Costom Install JS
 
-```javascript add index.html
+```javascript
 
 <!DOCTYPE html>
 <html lang="en">
