@@ -87,7 +87,7 @@ Add to your HTML:
 ```
 
 
-```Add Java Script To HTML
+```INCLUDE TO HTML:
 
 <!-- VIKS ANIMATION -->
 <script>
