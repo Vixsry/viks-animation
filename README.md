@@ -115,7 +115,7 @@ Add to your HTML:
 - `bounce-up`
 - `bounce-down`
 - `bounce-left`
-- `bounceright`
+- `bounce-right`
 
 
 ### Fade Animations
