@@ -63,33 +63,16 @@ Inspired by the brilliance of AOS.js, I embarked on a journey to create a simple
 
 </div>
 
-### Using Package Managers
-
-#### NPM
-```bash
-npm install viks --save
-```
-
-#### Yarn
-```bash
-yarn add viks
-```
-
-#### Bower
-```bash
-bower install viks --save
-```
-
 ### CDN Sources
 
 Add to your HTML:
 
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/css/viks-animation.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.css" rel="stylesheet">
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/src/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.js"></script>
 ```
 
 ### Manual Installation
@@ -173,22 +156,34 @@ Add to your HTML:
 
 ### Delay
 ```html
-<div viks-animation="fade-up" viks-delay="200">
-  Content here
+<div data-viks="fade-up" data-viks-delay="1000">
+  1 second delay
+</div>
+```
+or
+```html
+<div data-viks="fade-up delay-1000">
+  1 second delay
 </div>
 ```
 
 ### Duration
 ```html
-<div viks-animation="fade-up"viks-duration="800">
-  Content here
+<div data-viks="fade-up" data-viks-duration="2000">
+  2 seconds duration
+</div>
+```
+or
+```html
+<div data-viks="fade-up duration-2000">
+  2 seconds duration
 </div>
 ```
 
 ### Easing Functions
 ```html
-<div viks-animation="fade-up" viks-easing="ease-out">
-  Content here
+<div data-viks="fade-up" data-viks-easing="ease-out">
+  Ease-out easing
 </div>
 ```
 
