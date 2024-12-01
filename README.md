@@ -108,11 +108,13 @@ Add to your HTML:
 
 ### New Animation
 - `bounce`
+- `bounce-scale`
+- `bounce-rotate`
+- `bounce-opacity`
 - `bounce-up`
 - `bounce-down`
 - `bounce-left`
-- `bounceright`
-
+- `bounce-right`
 
 ### Fade Animations
 - `fade`
