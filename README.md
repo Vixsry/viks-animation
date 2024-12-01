@@ -86,7 +86,7 @@ Add to your HTML:
 [Rest of the README content remains the same]
 ```
 
-## Here's how to use the library:
+Here's how to use the library:
 
 ```javascript add index.html
 
