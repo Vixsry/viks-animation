@@ -87,7 +87,7 @@ Add to your HTML:
 ```
 
 
-```
+```addjavascript to html
 <!DOCTYPE html>
 <html lang="en">
 <head>
