@@ -70,10 +70,10 @@ Add to your HTML:
 
 ```html
 <!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.css">
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation/dist/viks.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
 ```
 
 ### Manual Installation
