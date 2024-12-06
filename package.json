@@ -1,26 +1,23 @@
 {
   "name": "viks-animation",
-  "version": "1.0.0",
-  "description": "Library untuk animasi web",
+  "version": "1.0.0", 
+  "description": "A lightweight JavaScript animation library",
   "main": "dist/viks.min.js",
+  "style": "dist/viks.min.css",
   "files": [
-    "dist/*"
+    "dist"
   ],
-  "scripts": {
-    "build": "npm run build", 
-    "publish": "npm publish --access public"
-  },
   "keywords": [
     "animation",
-    "web",
-    "library"
+    "javascript",
+    "css",
+    "scroll",
+    "effects"
   ],
   "author": "Vixsry",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vixsry/viks-animation.git"
-  },
-  "peerDependencies": {},
-  "devDependencies": {}
+    "url": "https://github.com/Vixsry/viks-animation"
+  }
 }
