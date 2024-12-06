@@ -110,7 +110,16 @@ Add to your HTML:
 </div>
 
 
-### New Animation
+## Shake Animation
+- `shake`
+- `shake-horizontal`
+- `shake-vertical`
+
+## Spin Animation
+- `spin`
+
+
+### Bounce Animation
 - `bounce`
 - `bounce-up`
 - `bounce-down`
