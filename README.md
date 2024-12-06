@@ -117,6 +117,10 @@ Add to your HTML:
 
 ## Spin Animation
 - `spin`
+- `spin-bounce`
+- `spin-slow`
+- `spin-fast`
+- `spin-reverse`
 
 
 ### Bounce Animation
