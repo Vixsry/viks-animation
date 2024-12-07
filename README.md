@@ -121,7 +121,7 @@ yarn add viks-animation
 [![Flip](https://img.shields.io/badge/Flip-Animations-black?style=flat-square&logoColor=aqua)](#flip-animations)
 [![Slide](https://img.shields.io/badge/Slide-Animations-aqua?style=flat-square&logoColor=black)](#slide-animations)
 [![Zoom](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#zoom-animations)
-[![Shake](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#Shake Animation)
+[![Shake](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#Shake-Animation)
 
 </div>
 
