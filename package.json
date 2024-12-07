@@ -19,5 +19,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Vixsry/viks-animation"
+  },
+  "scripts": {
+    "start": "node dist/viks.min.js",
+    "build": "echo 'Build process is not defined yet.'"
   }
 }
