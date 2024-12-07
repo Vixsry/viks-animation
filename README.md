@@ -113,10 +113,9 @@ yarn add viks-animation
 <link rel="stylesheet" href="path/to/viks.css">
 <script src="path/to/viks.js"></script>
 ```
-[Rest of the README content remains the same]
-```
 
 <h2 align="center">BASIC USAGE</h2>
+<p align="center">Rest of the README content remains the same</p>
 
 ```html
 <div data-viks="fade-up">
