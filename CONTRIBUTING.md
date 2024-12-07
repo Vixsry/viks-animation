@@ -202,8 +202,6 @@ Example JSDoc:
  */
 ```
 
-[Semua konten sebelumnya tetap sama sampai bagian Testing Guidelines]
-
 ## 🧪 Testing Guidelines
 
 ### Test Structure
@@ -371,8 +369,6 @@ npm test -- path/to/test-file.test.js
 # Run tests in watch mode
 npm test -- --watch
 ```
-
-[Sisa konten tetap sama]
 
 ### Test Coverage Requirements
 - Minimum 80% coverage for new code
