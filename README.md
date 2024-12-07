@@ -297,7 +297,7 @@ Your support helps me continue creating and maintaining projects! ✨
 
 </div>
 
-<h2 align="center">SUPPORT MY WORK</h2>
+<h2 align="center">Demo</h2>
 See the full demo in the [viks-animation-demo.html](./viks-animation-demo.html) file.
 
 ## 📝 License
