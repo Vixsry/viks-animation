@@ -1,11 +1,10 @@
 {
   "name": "viks-animation",
+  "version": "1.0.0",
   "description": "A lightweight JavaScript animation library",
-  "main": [
-    "dist/viks.min.js",
-    "dist/viks.min.css"
-  ],
-  "authors": ["Vixsry"],
+  "main": "dist/viks.min.js",
+  "styles": "dist/viks.min.css",
+  "authors": "Vixsry",
   "license": "MIT",
   "keywords": [
     "animation",
