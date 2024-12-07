@@ -108,7 +108,6 @@ yarn add viks-animation
 ```
 
 <h2 align="center">BASIC USAGE</h2>
-<p align="center">Rest of the README content remains the same</p>
 
 ```html
 <div data-viks="fade-up">
