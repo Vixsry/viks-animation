@@ -263,7 +263,7 @@ Your support helps me continue creating and maintaining projects! ✨
 
 </div>
 
-## 🔄 Advanced Usage
+<h2 align="center">ADVANCED USAGE</h2>
 
 ### Combining Multiple Attributes
 ```html
@@ -285,7 +285,7 @@ Your support helps me continue creating and maintaining projects! ✨
 </div>
 ```
 
-## 🌐 Browser Support
+<h2 align="center">BROWSER SUPPORT</h2>
 
 <div align="center">
 
@@ -297,7 +297,7 @@ Your support helps me continue creating and maintaining projects! ✨
 
 </div>
 
-## 🎮 Demo
+<h2 align="center">SUPPORT MY WORK</h2>
 See the full demo in the [viks-animation-demo.html](./viks-animation-demo.html) file.
 
 ## 📝 License
