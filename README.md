@@ -76,13 +76,16 @@ yarn add viks-animation
 
 ```html
 <script>
-    // Initialize VIKS animations
-    VIKS.init({
-        // Optional configuration
-        offset: 120,
-        duration: 800,
-        easing: 'ease-out'
-    });
+ // Basic initialization with global configuration
+VIKS.init({
+    offset: 120, // Animation trigger distance (px)
+    duration: 800, // Default duration of animation (ms)
+    easing: 'ease-out', // Timing function default
+    once: true, // Animation only once or repeatedly
+    disable: 'mobile', // Disable on certain devices
+    threshold: 0.2, // Threshold value for trigger
+    throttle: 100, // Throttle scroll event (ms)
+});
 </script>
 ```
 
@@ -90,6 +93,23 @@ yarn add viks-animation
 <script>
     VIKS.init();
 </script>
+```
+
+### EVENT CALLBACK
+
+```javascript
+VIKS.init({
+    // Callbacks for various events
+    onStart: function(element) {
+        console.log('Animation started:', element);
+    },
+    onComplete: function(element) {
+        console.log('Animation completed:', element);
+    },
+    onReset: function(element) {
+        console.log('Animation reset:', element);
+    }
+});
 ```
 
 <h2 align="center">MANUAL INSTALL</h2>
