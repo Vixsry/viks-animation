@@ -42,6 +42,7 @@
 ---
 
 <p align="center">Previous header content remains the same until the Installation section</p>
+
 ---
 
 <h2 align="center">AVAILABLE ANIMATION</h2>
@@ -57,6 +58,7 @@
 [![Bounce](https://img.shields.io/badge/Bounce-Animations-aqua?style=flat-square&logoColor=black)](#Bounce-Animation)
 
 </div>
+
 ---
 
 <h2 align="center">INTALLATION</h2>
