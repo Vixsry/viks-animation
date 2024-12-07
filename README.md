@@ -57,7 +57,7 @@ A modern JavaScript animation library designed to create smooth, lightweight, an
 
 [Previous header content remains the same until the Installation section]
 
-## 🚀 Installation <h2
+<h2 align="center">INTALLATION</h2>
 
 <div align="center">
 
