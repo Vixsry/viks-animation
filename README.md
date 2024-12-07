@@ -113,7 +113,7 @@ yarn add viks-animation
 </div>
 ```
 
-## ✨ Available Animations
+<h2 align="center">AVAILABLE ANIMATION</h2>
 
 <div align="center">
 
@@ -146,7 +146,7 @@ yarn add viks-animation
 - `bounce-right`
 
 
-### Fade Animations
+#Fade Animations
 - `fade`
 - `fade-up`
 - `fade-down`
