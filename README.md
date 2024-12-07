@@ -88,6 +88,9 @@ yarn add viks-animation
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
+<script>
+    VIKS.init();
+</script>
 ```
 
 <h2 align="center">MANUAL INSTALL</h2>
@@ -129,12 +132,6 @@ VIKS.init({
     threshold: 0.2, // Threshold value for trigger
     throttle: 100, // Throttle scroll event (ms)
 });
-</script>
-```
-
-```html
-<script>
-    VIKS.init();
 </script>
 ```
 
