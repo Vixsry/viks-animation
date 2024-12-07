@@ -75,20 +75,6 @@ npm test
 npm run build
 ```
 
-### Project Structure
-```
-viks-animation/
-├── src/
-│   ├── core/
-│   ├── animations/
-│   ├── utils/
-│   └── index.js
-├── dist/
-├── test/
-├── docs/
-└── examples/
-```
-
 ## 🔄 Pull Request Process
 
 1. **Branch Naming Convention**
