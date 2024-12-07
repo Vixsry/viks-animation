@@ -184,7 +184,7 @@ yarn add viks-animation
 - `zoom-out-left`
 - `zoom-out-right`
 
-## ⚙️ Configuration
+<h2 align="center">CONFIGURATION</h2>
 
 ### Delay
 ```html
@@ -247,13 +247,13 @@ or
 
 <div align="center">
 
-# ☕ Support My Work
+<h2 align="center">SUPPORT MY WORK</h2>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Buy%20Me%20A%20Coffee&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=gradient" />
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=white&color=aqua&width=435&lines=Support+my+work;Buy+me+a+coffee+☕)](https://ko-fi.com/viksry)
 
-## 💖 If you find my work helpful, consider buying me a coffee!
+<p align="center">If you find my work helpful, consider buying me a coffee!</p>
 
 <a href="https://ko-fi.com/viksry">
   <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200">
