@@ -202,10 +202,14 @@ Example JSDoc:
  */
 ```
 
+[Semua konten sebelumnya tetap sama sampai bagian Testing Guidelines]
+
 ## 🧪 Testing Guidelines
 
-### Writing Tests
+### Test Structure
+Tests are organized into several main categories:
 
+1. **Initialization Tests**
 ```javascript
 describe('VIKS Animation', () => {
   it('should initialize with default options', () => {
@@ -219,6 +223,156 @@ describe('VIKS Animation', () => {
   });
 });
 ```
+
+2. **Animation Parameters Tests**
+```javascript
+describe('Animation Parameters', () => {
+  it('should get correct delay value', () => {
+    const element = document.createElement('div');
+    element.setAttribute('data-viks', 'fade-up delay-500');
+    container.appendChild(element);
+    
+    const viks = VIKS.init();
+    const delay = viks.getDelay(element);
+    expect(delay).toBe('500');
+  });
+
+  it('should get correct duration value', () => {
+    const element = document.createElement('div');
+    element.setAttribute('data-viks', 'fade-up duration-2000');
+    container.appendChild(element);
+    
+    const viks = VIKS.init();
+    const duration = viks.getDuration(element);
+    expect(duration).toBe('2000');
+  });
+});
+```
+
+3. **Animation Application Tests**
+```javascript
+describe('Animation Application', () => {
+  it('should apply animation class correctly', () => {
+    const element = document.createElement('div');
+    element.setAttribute('data-viks', 'fade-up');
+    container.appendChild(element);
+    
+    const viks = VIKS.init();
+    viks.applyAnimation(element);
+    
+    expect(element.classList.contains('viks-animate')).toBe(true);
+  });
+});
+```
+
+4. **Scroll Behavior Tests**
+```javascript
+describe('Scroll Behavior', () => {
+  it('should handle smooth scroll for anchor links', () => {
+    const link = document.createElement('a');
+    const target = document.createElement('div');
+    link.setAttribute('href', '#test-section');
+    target.setAttribute('id', 'test-section');
+    container.appendChild(link);
+    container.appendChild(target);
+
+    const scrollIntoViewMock = jest.fn();
+    target.scrollIntoView = scrollIntoViewMock;
+
+    link.click();
+
+    expect(scrollIntoViewMock).toHaveBeenCalledWith({
+      behavior: 'smooth'
+    });
+  });
+});
+```
+
+### Test Setup Requirements
+
+1. **Jest Configuration**
+```json
+{
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFiles": ["./jest.setup.js"]
+  }
+}
+```
+
+2. **Jest Setup File**
+```javascript
+// jest.setup.js
+global.IntersectionObserver = class IntersectionObserver {
+  constructor() {}
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
+```
+
+### Writing New Tests
+
+When adding new tests, follow these guidelines:
+
+1. Create a clear describe block for the feature
+2. Use meaningful test names that describe the expected behavior
+3. Setup and cleanup test environment properly
+4. Mock external dependencies when needed
+5. Test both success and failure cases
+6. Test edge cases
+
+Example template for new tests:
+```javascript
+describe('Feature Name', () => {
+  let container;
+  
+  beforeEach(() => {
+    container = document.createElement('div');
+    document.body.appendChild(container);
+  });
+
+  afterEach(() => {
+    document.body.removeChild(container);
+    jest.clearAllMocks();
+  });
+
+  it('should describe expected behavior', () => {
+    // Test implementation
+  });
+});
+```
+
+### Test Coverage Requirements
+
+- Minimum 80% coverage for new code
+- All animation types must have tests
+- Test browser compatibility
+- Include tests for:
+  - Animation parameters
+  - Element detection
+  - Scroll behavior
+  - Animation application/removal
+  - Window events
+  - Intersection Observer functionality
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage
+npm test -- --coverage
+
+# Run specific test file
+npm test -- path/to/test-file.test.js
+
+# Run tests in watch mode
+npm test -- --watch
+```
+
+[Sisa konten tetap sama]
 
 ### Test Coverage Requirements
 - Minimum 80% coverage for new code
