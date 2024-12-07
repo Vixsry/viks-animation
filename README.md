@@ -84,9 +84,6 @@ yarn add viks-animation
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
-<script>
-    VIKS.init();
-</script>
 ```
 
 <h2 align="center">MANUAL INSTALL</h2>
