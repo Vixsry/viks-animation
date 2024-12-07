@@ -139,6 +139,7 @@ VIKS.init({
      data-viks-mobile="fade-down">
     Responsive animation
 </div>
+```
 
 <h2 align="center">MANUAL INSTALL</h2>
 
