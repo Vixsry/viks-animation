@@ -86,7 +86,7 @@ yarn add viks-animation
 </script>
 ```
 
-```or
+```html
 <script>
     VIKS.init();
 </script>
@@ -314,7 +314,7 @@ Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](.
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-aqua?style=for-the-badge&logo=github&logoColor=black)](https://vixsry.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-aqua?style=for-the-badge&logo=github&logoColor=black)](https://viksry.my.id)
 [![Star](https://img.shields.io/badge/Star-black?style=for-the-badge&logo=github&logoColor=aqua)](https://github.com/Vixsry/viks-animation)
 
 <h3><span style="color: aqua">✨ "Bringing Life to Web Elements" ✨</span></h3>
