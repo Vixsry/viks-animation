@@ -87,6 +87,7 @@ yarn add viks-animation
 ```
 
 <h2 align="center">QUICK START</h2>
+
 ```html
 <script>
     // Initialize VIKS animations
