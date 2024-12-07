@@ -112,6 +112,34 @@ VIKS.init({
 });
 ```
 
+### Custom Animation Groups:
+```javascript
+// Define custom animation groups
+const customAnimations = {
+    'custom-group': [
+        { opacity: [0, 1] },
+        { transform: ['translateY(50px)', 'translateY(0)'] }
+    ]
+};
+
+VIKS.init({
+    animations: customAnimations
+});
+
+// Usage in HTML
+<div data-viks="custom-group">Custom animation</div>
+```
+
+## Conditional Animation:
+```javascript
+// Different animations based on viewport
+<div data-viks="fade-up"
+     data-viks-desktop="zoom-in"
+     data-viks-tablet="fade-left"
+     data-viks-mobile="fade-down">
+    Responsive animation
+</div>
+
 <h2 align="center">MANUAL INSTALL</h2>
 
 1. Download the CSS and JavaScript files:
