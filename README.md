@@ -106,6 +106,9 @@ yarn add viks-animation
 
 <!-- JavaScript -->
 <script src="path/to/viks.js"></script>
+<script>
+    VIKS.init();
+</script>
 ```
 
 <h2 align="center">BASIC USAGE</h2>
