@@ -41,10 +41,6 @@
 
 ---
 
-<p align="center">Previous header content remains the same until the Installation section</p>
-
----
-
 <h2 align="center">AVAILABLE ANIMATION</h2>
 
 <div align="center">
