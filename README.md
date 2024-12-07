@@ -72,6 +72,31 @@ yarn add viks-animation
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
 ```
 
+<h2 align="center">MANUAL INSTALL</h2>
+
+1. Download the CSS and JavaScript files:
+   - `viks.css`
+   - `viks.js`
+
+2. Include the files in your HTML:
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="path/to/viks.css">
+
+<!-- JavaScript -->
+<script src="path/to/viks.js"></script>
+```
+
+<h2 align="center">BASIC USAGE</h2>
+<p align="center">Rest of the README content remains the same</p>
+
+```html
+<div data-viks="fade-up">
+  Your content here
+</div>
+```
+
+
 <h2 align="center">QUICK START</h2>
 
 ```html
@@ -138,30 +163,6 @@ VIKS.init({
      data-viks-tablet="fade-left"
      data-viks-mobile="fade-down">
     Responsive animation
-</div>
-```
-
-<h2 align="center">MANUAL INSTALL</h2>
-
-1. Download the CSS and JavaScript files:
-   - `viks.css`
-   - `viks.js`
-
-2. Include the files in your HTML:
-```html
-<!-- CSS -->
-<link rel="stylesheet" href="path/to/viks.css">
-
-<!-- JavaScript -->
-<script src="path/to/viks.js"></script>
-```
-
-<h2 align="center">BASIC USAGE</h2>
-<p align="center">Rest of the README content remains the same</p>
-
-```html
-<div data-viks="fade-up">
-  Your content here
 </div>
 ```
 
