@@ -58,13 +58,15 @@ A modern JavaScript animation library designed to create smooth, lightweight, an
 <div align="center">
 
 [![NPM](https://img.shields.io/badge/NPM-black?style=for-the-badge&logo=npm&logoColor=aqua)](#npm)
-
 [![Yarn](https://img.shields.io/badge/Yarn-aqua?style=for-the-badge&logo=yarn&logoColor=black)](#yarn)
-
 [![CDN](https://img.shields.io/badge/CDN-aqua?style=for-the-badge&logo=jsdelivr&logoColor=black)](#cdn)
 
 </div>
 
+### NPM Sources
+```
+npm i viks-animation
+```
 ### CDN Sources
 
 Add to your HTML:
