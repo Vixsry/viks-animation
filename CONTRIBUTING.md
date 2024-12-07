@@ -79,14 +79,19 @@ npm run build
 ```
 viks-animation/
 ├── src/
-│    ├── css
-│          └── viks.css
-│    ├── js
-│   └── index.js
+│   ├── js/
+│   │   └── viks.js
+│   ├── css/
+│   │   └── viks.css
 ├── dist/
-├── test/
-├── docs/
-└── examples/
+│   ├── viks.min.css
+│   └── viks.min.js
+bower.json
+package.json
+README.md
+LICENSE
+CONTRIBUTING.md
+.gitignore
 ```
 
 ## 🔄 Pull Request Process
