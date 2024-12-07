@@ -77,7 +77,7 @@ npm install viks-animation --save
 yarn add viks-animation
 ```
 
-### ☁️ CDN
+### CDN
 ```html
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.css">
@@ -86,7 +86,7 @@ yarn add viks-animation
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
 ```
 
-### 🎯 Quick Start
+<h2 align="center">QUICK START</h2>
 ```html
 <script>
     // Initialize VIKS animations
@@ -105,7 +105,7 @@ yarn add viks-animation
 </script>
 ```
 
-### Manual Installation
+<h2 align="center">MANUAL INSTALL</h2>
 
 1. Download the CSS and JavaScript files:
    - `viks.css`
