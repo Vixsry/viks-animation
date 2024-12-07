@@ -38,13 +38,13 @@ By participating in this project, you are expected to uphold our Code of Conduct
 
 1. **Fork the Repository**
    ```bash
-   git clone https://github.com/your-username/viks-animation.git
+   git clone https://github.com/Vixsry/viks-animation.git
    cd viks-animation
    ```
 
 2. **Install Dependencies**
    ```bash
-   npm install
+   npm install viks-animation --save
    ```
 
 3. **Create a Branch**
