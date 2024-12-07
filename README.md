@@ -31,7 +31,7 @@
 A modern JavaScript animation library designed to create smooth, lightweight, and customizable scroll animations for various web applications. Built with a focus on simplicity and efficiency, this library delivers an optimal experience without compromising performance.
 
 ---
-## 📱 Connect With Developer
+<h2 align="center">CONTACT WITH DEVELOPER</h2>
 <div align="center">
   
 [![Email](https://img.shields.io/badge/Email-aqua?style=for-the-badge&logo=gmail&logoColor=black)](mailto:viksry@proton.me)
@@ -45,7 +45,7 @@ A modern JavaScript animation library designed to create smooth, lightweight, an
 
 ---
 
-## 📋 Table of Contents
+<h2 align="center">TABLE OF CONTENTS</h2>
 <div align="center">
 
 [![Installation](https://img.shields.io/badge/Installation-aqua?style=for-the-badge&logoColor=black)](#installation)
@@ -67,12 +67,12 @@ A modern JavaScript animation library designed to create smooth, lightweight, an
 
 </div>
 
-### 📦 NPM
+### NPM
 ```bash
 npm install viks-animation --save
 ```
 
-### 🧶 Yarn
+### YARN
 ```bash
 yarn add viks-animation
 ```
