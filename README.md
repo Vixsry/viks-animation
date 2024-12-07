@@ -41,16 +41,6 @@
 
 ---
 
-<h2 align="center">TABLE OF CONTENTS</h2>
-<div align="center">
-
-[![Installation](https://img.shields.io/badge/Installation-aqua?style=for-the-badge&logoColor=black)](#installation)
-[![Usage](https://img.shields.io/badge/Usage-black?style=for-the-badge&logoColor=aqua)](#basic-usage)
-[![Animations](https://img.shields.io/badge/Animations-aqua?style=for-the-badge&logoColor=black)](#available-animations)
-[![Config](https://img.shields.io/badge/Configuration-black?style=for-the-badge&logoColor=aqua)](#configuration)
-
-</div>
-
 <p align="center">Previous header content remains the same until the Installation section</p>
 
 <h2 align="center">INTALLATION</h2>
