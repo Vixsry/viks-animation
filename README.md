@@ -251,7 +251,7 @@ or
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Buy%20Me%20A%20Coffee&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=gradient" />
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=aqua&width=435&lines=Support+my+work;Buy+me+a+coffee+☕)](https://ko-fi.com/viksry)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=white&color=aqua&width=435&lines=Support+my+work;Buy+me+a+coffee+☕)](https://ko-fi.com/viksry)
 
 ## 💖 If you find my work helpful, consider buying me a coffee!
 
