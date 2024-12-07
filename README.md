@@ -100,7 +100,10 @@ yarn add viks-animation
 
 2. Include the files in your HTML:
 ```html
+<!-- CSS -->
 <link rel="stylesheet" href="path/to/viks.css">
+
+<!-- JavaScript -->
 <script src="path/to/viks.js"></script>
 ```
 
