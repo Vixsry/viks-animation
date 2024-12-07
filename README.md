@@ -76,6 +76,13 @@ Add to your HTML:
 <script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
 ```
 
+### Calling
+```
+<script>
+    VIKS.init();
+</script>
+```
+
 ### Manual Installation
 
 1. Download the CSS and JavaScript files:
