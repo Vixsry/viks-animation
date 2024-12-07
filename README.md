@@ -26,11 +26,7 @@
 </div>
 
 ---
-## About Us
 
-A modern JavaScript animation library designed to create smooth, lightweight, and customizable scroll animations for various web applications. Built with a focus on simplicity and efficiency, this library delivers an optimal experience without compromising performance.
-
----
 <h2 align="center">CONTACT WITH DEVELOPER</h2>
 <div align="center">
   
@@ -55,7 +51,7 @@ A modern JavaScript animation library designed to create smooth, lightweight, an
 
 </div>
 
-[Previous header content remains the same until the Installation section]
+<p align="center">Previous header content remains the same until the Installation section</p>
 
 <h2 align="center">INTALLATION</h2>
 
