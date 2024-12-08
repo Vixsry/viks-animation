@@ -104,6 +104,36 @@ yarn add viks-animation
 </script>
 ```
 
+<h2 align="center">NEW UPDATE</h2>
+
+```javascript
+const VIKS = {
+  init(customConfig = {}) {
+    this.elements = document.querySelectorAll('[data-viks]');
+    this.windowHeight = window.innerHeight;
+    this.windowWidth = window.innerWidth;
+    this.config = {
+      thresholdTop: 0.1,
+      thresholdBottom: 0.1,
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      animatedClassName: 'viks-animate',
+      initClassName: 'viks-init',
+      useClassNames: false,
+      disableMutationObserver: false,
+      throttleDelay: 99,
+      debounceDelay: 50,
+      offset: 120,
+      delay: 0,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+      ...customConfig
+    };
+```
+
 <h2 align="center">BASIC USAGE</h2>
 
 ```html
