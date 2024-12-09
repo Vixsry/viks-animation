@@ -80,10 +80,13 @@ yarn add viks-animation
 ### CDN
 ```html
 <!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.css">
+<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/gh/Vixsry/viks-animation@latest/dist/viks.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
+<script>
+    VIKS.init();
+</script>
 ```
 
 <h2 align="center">MANUAL INSTALL</h2>
