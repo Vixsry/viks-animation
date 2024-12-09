@@ -83,7 +83,7 @@ yarn add viks-animation
 <link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
 
 <!-- JavaScript -->
-<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
+<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
 <script>
     VIKS.init();
 </script>
