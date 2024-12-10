@@ -162,23 +162,6 @@ document.addEventListener('viksHidden', function(event) {
 });
 ```
 
-### Custom Animation Groups:
-```javascript
-// Define custom animation groups
-const customAnimations = {
-    'custom-group': [
-        { opacity: [0, 1] },
-        { transform: ['translateY(50px)', 'translateY(0)'] }
-    ]
-};
-
-VIKS.init({
-    animations: customAnimations
-});
-
-// Usage in HTML
-<div data-viks="custom-group">Custom animation</div>
-```
 
 ## Conditional Animation:
 ```javascript
