@@ -136,17 +136,29 @@ VIKS.init({
 ### EVENT CALLBACK
 
 ```javascript
-VIKS.init({
-    // Callbacks for various events
-    onStart: function(element) {
-        console.log('Animation started:', element);
-    },
-    onComplete: function(element) {
-        console.log('Animation completed:', element);
-    },
-    onReset: function(element) {
-        console.log('Animation reset:', element);
-    }
+// Callbacks for various events
+function onStart(element) {
+    console.log('Animation started:', element);
+}
+
+function onComplete(element) {
+    console.log('Animation completed:', element);
+}
+
+function onReset(element) {
+    console.log('Animation reset:', element);
+}
+
+// Listeners for VIKS built-in events
+document.addEventListener('viksAnimated', function(event) {
+    const element = event.target; // Element being animated
+    onStart(element);
+    onComplete(element);
+});
+
+document.addEventListener('viksHidden', function(event) {
+    const element = event.target; // Element whose animation was removed
+    onReset(element);
 });
 ```
 
