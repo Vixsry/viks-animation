@@ -42,15 +42,15 @@ module.exports = {
           },
         },
       }),
-      new CssMinimizerPlugin(), // Minifikasi CSS
+      new CssMinimizerPlugin(), 
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'viks.min.css', // Output file CSS
+      filename: 'viks.min.css', 
     }),
   ],
   resolve: {
-    extensions: ['.js', '.scss'], // Resolve otomatis file dengan ekstensi ini
+    extensions: ['.js', '.scss'],
   },
 };
