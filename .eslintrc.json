@@ -1,1 +1,100 @@
-
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "amd": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    // Possible Errors
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-irregular-whitespace": "error",
+    
+    // Best Practices
+    "curly": ["error", "all"],
+    "eqeqeq": ["error", "always"],
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-multi-spaces": "error",
+    "no-unused-expressions": "error",
+    
+    // Variables
+    "no-unused-vars": ["warn", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": true
+    }],
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": true,
+      "variables": true
+    }],
+    
+    // Stylistic Issues
+    "array-bracket-spacing": ["error", "never"],
+    "block-spacing": ["error", "always"],
+    "brace-style": ["error", "1tbs", {
+      "allowSingleLine": false
+    }],
+    "camelcase": ["error", {
+      "properties": "never"
+    }],
+    "comma-dangle": ["error", "never"],
+    "comma-spacing": ["error", {
+      "before": false,
+      "after": true
+    }],
+    "comma-style": ["error", "last"],
+    "computed-property-spacing": ["error", "never"],
+    "indent": ["error", 2],
+    "key-spacing": ["error", {
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "keyword-spacing": ["error", {
+      "before": true,
+      "after": true
+    }],
+    "max-len": ["warn", {
+      "code": 100,
+      "ignoreComments": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    }],
+    
+    // ES6
+    "arrow-spacing": ["error", {
+      "before": true,
+      "after": true
+    }],
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-template": "error",
+    
+    // Special rules for animation library
+    "no-restricted-globals": ["error", "event"],
+    "no-param-reassign": ["error", {
+      "props": false
+    }]
+  },
+  "globals": {
+    "VIKS": "writable",
+    "VIKSNumber": "writable",
+    "define": "readonly",
+    "module": "readonly"
+  },
+  "ignorePatterns": [
+    "dist/*",
+    "node_modules/*",
+    "public/*"
+  ]
+}
