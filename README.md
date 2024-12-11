@@ -10,7 +10,7 @@
 
 <div align="center">
   
-![Version](https://img.shields.io/badge/version-1.1.1-aqua?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1.2-aqua?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-black?style=flat-square)
 ![Downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-aqua?style=flat-square)
 
@@ -103,6 +103,19 @@ VIKS.init();
         
   // Initialization VIKS Number
    VIKSNumber.init();
+</script>
+```
+
+```html
+<script>
+// Initialize VIKS first
+VIKS.init({
+offset: 120,
+delay: 100,
+duration: 600,
+}); 
+// Then initialize NumberAnimation
+VIKSNumber.init();
 </script>
 ```
 
