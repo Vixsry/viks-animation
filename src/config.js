@@ -2,7 +2,7 @@
 
 const config = {
   appName: "VIKS Animation",
-  version: "1.0.0",
+  version: "1.1.3",
 
   // Animation Settings
   animationDuration: 500, // Duration in milliseconds
