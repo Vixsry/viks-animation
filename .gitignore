@@ -1,8 +1,65 @@
-"ignore": [
-  "**/.*",
-  "node_modules",
-  "bower_components",
-  "test",
-  "tests"
-],
-"dependencies": {}
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Production build
+/dist
+
+# Development
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage
+/.nyc_output
+
+# Temporary files
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Cache directories
+.npm
+.eslintcache
+.stylelintcache
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Optional: Uncomment if you're using these tools
+# .grunt/
+# bower_components/
+# .bower-cache/
+# .bower-registry/
+# .bower-tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+/public/*.js
+/public/*.css
+!/public/index.html
+!/public/styles.css
