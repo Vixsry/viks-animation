@@ -1,5 +1,5 @@
 /*!
- * VIKS ANIMATION v1.1.3
+ * VIKS ANIMATION v1.1.4
  * MIT License Copyright (c) 27 Nov 2024 Vixsry
  * https://github.com/Vixsry/viks-animation/blob/main/LICENSE
  */
