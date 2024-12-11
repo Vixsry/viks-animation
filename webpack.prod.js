@@ -11,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: 'ViksAnimation',
     libraryTarget: 'umd',
-    clean: true // Membersihkan folder dist sebelum build
+    clean: true 
   },
   module: {
     rules: [
@@ -19,13 +19,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Transpile ES6+ ke ES5
+          loader: 'babel-loader', 
         },
       },
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Ekstrak CSS ke file terpisah
+          MiniCssExtractPlugin.loader, 
           'css-loader',
           'sass-loader',
         ],
@@ -35,10 +35,10 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [
-      new TerserPlugin({ // Minifikasi JavaScript
+      new TerserPlugin({ 
         terserOptions: {
           compress: {
-            drop_console: true, // Menghapus console.log untuk produksi
+            drop_console: true, 
           },
         },
       }),
