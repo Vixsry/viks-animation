@@ -85,7 +85,24 @@ yarn add viks-animation
 <!-- JavaScript -->
 <script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
 <script>
-    VIKS.init();
+// Initialization VIKS
+VIKS.init();
+</script>
+```
+
+### COMBINATION WITH ANIMATION NUMBERS
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
+<script>
+   // Initialization VIKS
+   VIKS.init();
+        
+  // Initialization VIKS Number
+   VIKSNumber.init();
 </script>
 ```
 
@@ -172,6 +189,17 @@ document.addEventListener('viksHidden', function(event) {
      data-viks-mobile="fade-down">
     Responsive animation
 </div>
+```
+
+### NUMBERS ANIMATION
+```html
+<span data-viks="type-nbr duration-1000 fps-120">1000</span>
+
+<span data-viks="type-nbr">1000</span>
+```
+or
+```html
+<span data-viks="type-nbr duration-2000 fps-60 bottom-off">2000</span>
 ```
 
 ## Shake Animation
