@@ -1,53 +1,19 @@
 # Dependencies
 node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 
-# Production build
-/dist
-
-# Development
+# Environment files
 .env
 .env.local
 .env.*.local
 
-# IDE and Editor files
+# IDE/Editor folders
 .idea/
 .vscode/
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
-
-# Testing
-/coverage
-/.nyc_output
-
-# Temporary files
-*.log
-logs
-*.pid
-*.seed
-*.pid.lock
-
-# Cache directories
-.npm
-.eslintcache
-.stylelintcache
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-# Optional: Uncomment if you're using these tools
-# .grunt/
-# bower_components/
-# .bower-cache/
-# .bower-registry/
-# .bower-tmp/
+*.sublime-project
+*.sublime-workspace
 
 # OS generated files
 .DS_Store
@@ -58,8 +24,29 @@ logs
 ehthumbs.db
 Thumbs.db
 
-# Project specific
-/public/*.js
-/public/*.css
-!/public/index.html
-!/public/styles.css
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build output
+# Uncomment if you don't want to track compiled files
+# dist/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Optional: Local development files
+dev/
+*.local
