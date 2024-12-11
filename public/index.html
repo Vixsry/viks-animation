@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation Effects Project</title>
+    
+    <!-- Link to main CSS file (you can change the path if necessary) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Optional: Add external fonts or libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Include any other CSS or library (e.g., Bootstrap) if needed -->
+</head>
+
+<body>
+    <!-- Main Content -->
+    <header>
+        <h1>Welcome to My Animation Project</h1>
+    </header>
+
+    <section id="animation-container">
+        <!-- Example element to animate -->
+        <div id="zoomElement" class="zoom-box">
+            Hover to Zoom In/Out
+        </div>
+    </section>
+
+    <!-- Buttons to trigger animations -->
+    <div class="controls">
+        <button onclick="zoomIn(document.getElementById('zoomElement'), 1.5, 1000)">Zoom In</button>
+        <button onclick="zoomOut(document.getElementById('zoomElement'), 1, 1000)">Zoom Out</button>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ by [Viksry]</p>
+    </footer>
+
+    <!-- Include JavaScript files -->
+    <script src="src/animations/zoom.js"></script>
+    <!-- Add more JS files if necessary -->
+</body>
+
+</html>
