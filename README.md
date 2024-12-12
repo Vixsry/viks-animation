@@ -217,9 +217,9 @@ or
 
 ---
 
-## Custom Animation Usage Guide
+<h2 align="center">CUSTOM USAGE GUIDE</h2>
 
-## Introduction
+<p align="center">Introduction</p>
 
 The VIKS ANIMATION library allows you to create custom animations for your web elements, providing flexibility and control over your site's appearance. By defining custom animations in CSS and applying them through the data-viks attribute, you can easily enhance the user experience with unique transitions and movements.
 
