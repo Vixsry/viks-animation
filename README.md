@@ -288,15 +288,17 @@ In this example, the animation custom-fade will last 2 seconds and use an ease-o
 
 If you want to trigger the animation based on user interaction or other events, you can do so by using JavaScript.
 
-Example: Trigger Animation on Click
+## Example: Trigger Animation on Click
 
+```javascript
 document.querySelector('.my-element').addEventListener('click', function() {
   this.setAttribute('data-viks', 'custom-fade'); // Trigger custom animation on click
 });
+```
 
 Here, the custom animation is triggered when the .my-element is clicked, by setting the data-viks attribute to custom-fade.
 
-5. Advanced Animation Customizations
+5.Advanced Animation Customizations
 
 You can also customize your animations further by adjusting the following properties:
 
@@ -307,8 +309,9 @@ Animation Delay: Set a delay before the animation starts using the animation-del
 Transformations: Use transformations like translate, scale, rotate, skew, etc., to create dynamic effects.
 
 
-Example: Advanced Custom Animation
+## Example: Advanced Custom Animation
 
+```css
 @keyframes custom-bounce {
   0% {
     transform: scale(0.5);
@@ -327,15 +330,17 @@ Example: Advanced Custom Animation
 .viks-animate[data-viks="custom-bounce"] {
   animation: custom-bounce 1s ease-in-out infinite;
 }
+```
 
 And in HTML:
 
+```html
 <div data-viks="custom-bounce" class="viks-animate">This element will bounce</div>
+```
 
-Conclusion
+## Conclusion
 
 By using the custom animation feature of the VIKS ANIMATION library, you can easily create engaging and dynamic animations tailored to your website’s design needs. Define your custom animations with CSS, apply them with the data-viks attribute, and control their behavior through CSS and JavaScript for maximum flexibility.
-
 
 ---
 
