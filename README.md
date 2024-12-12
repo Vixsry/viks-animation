@@ -234,7 +234,7 @@ Control Durations and Timing: Customize the animation duration, timing functions
 JavaScript Integration: Trigger custom animations dynamically through JavaScript.
 
 
-Step-by-Step Guide
+## Step-by-Step Guide
 
 1. Defining Custom Animations in CSS
 
@@ -258,7 +258,7 @@ First, define your custom animations using CSS @keyframes. This allows you to co
 
 In the example above, the custom-fade animation fades in an element from transparent (opacity: 0) while moving it upward (translateY: 100px) to its original position (opacity: 1, translateY: 0).
 
-2. Applying the Custom Animation to HTML Elements
+2.Applying the Custom Animation to HTML Elements
 
 Once the animation is defined in CSS, you can apply it to any HTML element by setting the data-viks attribute to the animation's name.
 
@@ -268,7 +268,7 @@ Example: Apply the Custom Animation
 
 Here, the data-viks="custom-fade" will apply the custom-fade animation to the element when the page loads.
 
-3. Customizing the Animation Duration and Timing
+3.Customizing the Animation Duration and Timing
 
 You can also specify the duration, timing function, and delay of your custom animation directly in CSS.
 
