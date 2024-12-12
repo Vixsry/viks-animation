@@ -219,11 +219,11 @@ or
 
 VIKS ANIMATION - Custom Animation Usage Guide
 
-Introduction
+## Introduction
 
 The VIKS ANIMATION library allows you to create custom animations for your web elements, providing flexibility and control over your site's appearance. By defining custom animations in CSS and applying them through the data-viks attribute, you can easily enhance the user experience with unique transitions and movements.
 
-Features
+## Features
 
 Custom Animations: Create your own animations using CSS @keyframes.
 
@@ -240,8 +240,9 @@ Step-by-Step Guide
 
 First, define your custom animations using CSS @keyframes. This allows you to control how your element will change over time.
 
-Example: Define a Custom Fade Animation
+## Example: Define a Custom Fade Animation
 
+```css
 /* Define a custom animation using keyframes */
 @keyframes custom-fade {
   0% {
@@ -253,6 +254,7 @@ Example: Define a Custom Fade Animation
     transform: translateY(0);
   }
 }
+```
 
 In the example above, the custom-fade animation fades in an element from transparent (opacity: 0) while moving it upward (translateY: 100px) to its original position (opacity: 1, translateY: 0).
 
