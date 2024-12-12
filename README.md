@@ -215,6 +215,124 @@ or
 <span data-viks="type-nbr duration-2000 fps-60 bottom-off">2000</span>
 ```
 
+---
+
+VIKS ANIMATION - Custom Animation Usage Guide
+
+Introduction
+
+The VIKS ANIMATION library allows you to create custom animations for your web elements, providing flexibility and control over your site's appearance. By defining custom animations in CSS and applying them through the data-viks attribute, you can easily enhance the user experience with unique transitions and movements.
+
+Features
+
+Custom Animations: Create your own animations using CSS @keyframes.
+
+Easy Integration: Apply custom animations using the data-viks attribute on any HTML element.
+
+Control Durations and Timing: Customize the animation duration, timing functions, and delays to suit your design.
+
+JavaScript Integration: Trigger custom animations dynamically through JavaScript.
+
+
+Step-by-Step Guide
+
+1. Defining Custom Animations in CSS
+
+First, define your custom animations using CSS @keyframes. This allows you to control how your element will change over time.
+
+Example: Define a Custom Fade Animation
+
+/* Define a custom animation using keyframes */
+@keyframes custom-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+In the example above, the custom-fade animation fades in an element from transparent (opacity: 0) while moving it upward (translateY: 100px) to its original position (opacity: 1, translateY: 0).
+
+2. Applying the Custom Animation to HTML Elements
+
+Once the animation is defined in CSS, you can apply it to any HTML element by setting the data-viks attribute to the animation's name.
+
+Example: Apply the Custom Animation
+
+<div data-viks="custom-fade" class="viks-animate">This is an element with a custom fade animation</div>
+
+Here, the data-viks="custom-fade" will apply the custom-fade animation to the element when the page loads.
+
+3. Customizing the Animation Duration and Timing
+
+You can also specify the duration, timing function, and delay of your custom animation directly in CSS.
+
+Example: Customize Duration and Timing
+
+.viks-animate[data-viks="custom-fade"] {
+  animation: custom-fade 2s ease-out;
+}
+
+In this example, the animation custom-fade will last 2 seconds and use an ease-out timing function, which creates a smooth transition at the end of the animation.
+
+4. Using JavaScript to Trigger Animations Dynamically
+
+If you want to trigger the animation based on user interaction or other events, you can do so by using JavaScript.
+
+Example: Trigger Animation on Click
+
+document.querySelector('.my-element').addEventListener('click', function() {
+  this.setAttribute('data-viks', 'custom-fade'); // Trigger custom animation on click
+});
+
+Here, the custom animation is triggered when the .my-element is clicked, by setting the data-viks attribute to custom-fade.
+
+5. Advanced Animation Customizations
+
+You can also customize your animations further by adjusting the following properties:
+
+Timing Function: Choose different timing functions like linear, ease-in, ease-out, ease-in-out, or use a custom cubic-bezier function.
+
+Animation Delay: Set a delay before the animation starts using the animation-delay property.
+
+Transformations: Use transformations like translate, scale, rotate, skew, etc., to create dynamic effects.
+
+
+Example: Advanced Custom Animation
+
+@keyframes custom-bounce {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.viks-animate[data-viks="custom-bounce"] {
+  animation: custom-bounce 1s ease-in-out infinite;
+}
+
+And in HTML:
+
+<div data-viks="custom-bounce" class="viks-animate">This element will bounce</div>
+
+Conclusion
+
+By using the custom animation feature of the VIKS ANIMATION library, you can easily create engaging and dynamic animations tailored to your website’s design needs. Define your custom animations with CSS, apply them with the data-viks attribute, and control their behavior through CSS and JavaScript for maximum flexibility.
+
+
+---
+
 ## Shake Animation
 - `shake`
 - `shake-horizontal`
