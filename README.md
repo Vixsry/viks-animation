@@ -236,7 +236,7 @@ JavaScript Integration: Trigger custom animations dynamically through JavaScript
 
 ## Step-by-Step Guide
 
-1. Defining Custom Animations in CSS
+1.Defining Custom Animations in CSS
 
 First, define your custom animations using CSS @keyframes. This allows you to control how your element will change over time.
 
@@ -262,9 +262,11 @@ In the example above, the custom-fade animation fades in an element from transpa
 
 Once the animation is defined in CSS, you can apply it to any HTML element by setting the data-viks attribute to the animation's name.
 
-Example: Apply the Custom Animation
+## Example: Apply the Custom Animation
 
+'''html
 <div data-viks="custom-fade" class="viks-animate">This is an element with a custom fade animation</div>
+'''
 
 Here, the data-viks="custom-fade" will apply the custom-fade animation to the element when the page loads.
 
