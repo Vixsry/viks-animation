@@ -44,7 +44,7 @@ By participating in this project, you are expected to uphold our Code of Conduct
 
 2. **Install Dependencies**
    ```bash
-   npm install
+   npm i viks-animation
    ```
 
 3. **Create a Branch**
