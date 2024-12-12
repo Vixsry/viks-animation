@@ -264,9 +264,9 @@ Once the animation is defined in CSS, you can apply it to any HTML element by se
 
 ## Example: Apply the Custom Animation
 
-'''html
+```html
 <div data-viks="custom-fade" class="viks-animate">This is an element with a custom fade animation</div>
-'''
+```
 
 Here, the data-viks="custom-fade" will apply the custom-fade animation to the element when the page loads.
 
@@ -274,15 +274,17 @@ Here, the data-viks="custom-fade" will apply the custom-fade animation to the el
 
 You can also specify the duration, timing function, and delay of your custom animation directly in CSS.
 
-Example: Customize Duration and Timing
+## Example: Customize Duration and Timing
 
+```css
 .viks-animate[data-viks="custom-fade"] {
   animation: custom-fade 2s ease-out;
 }
+```
 
 In this example, the animation custom-fade will last 2 seconds and use an ease-out timing function, which creates a smooth transition at the end of the animation.
 
-4. Using JavaScript to Trigger Animations Dynamically
+4.Using JavaScript to Trigger Animations Dynamically
 
 If you want to trigger the animation based on user interaction or other events, you can do so by using JavaScript.
 
