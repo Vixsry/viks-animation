@@ -217,7 +217,7 @@ or
 
 ---
 
-VIKS ANIMATION - Custom Animation Usage Guide
+## Custom Animation Usage Guide
 
 ## Introduction
 
