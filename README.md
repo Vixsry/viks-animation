@@ -57,6 +57,42 @@
 
 ---
 
+<h2 align="center">NEW UPDATE 1.1.4</h2>
+
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
+<script src="path/to/viks.js"></script>
+<script>
+    const viks3D = new Viks3D();
+    viks3D.addShadow();
+    viks3D.addParallax(20);
+</script>
+```
+
+```html
+<script src="path/to/viks.js"></script>
+<script>
+    const viks3D = new Viks3D();
+    viks3D.addShadow();
+    viks3D.addParallax(20);
+</script>
+```
+
+<h2 align="center">EXAMPLES OF USE VIKS 3D</h2>
+```html
+<div data-viks="3D">
+    <h2>Examples</h2>
+    <p>Examples</p>
+</div>
+```html
+
+
+
+
 <h2 align="center">INTALLATION</h2>
 
 <div align="center">
