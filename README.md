@@ -83,12 +83,13 @@
 ```
 
 <h2 align="center">EXAMPLES OF USE VIKS 3D</h2>
+
 ```html
 <div data-viks="3D">
     <h2>Examples</h2>
     <p>Examples</p>
 </div>
-```html
+```
 
 
 
