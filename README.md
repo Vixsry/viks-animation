@@ -67,14 +67,6 @@
 </script>
 ```
 
-```html
-<script src="path/to/viks.js"></script>
-<script>
-    viks3D.addShadow();
-    viks3D.addParallax(20);
-</script>
-```
-
 <h2 align="center">EXAMPLES OF USE VIKS 3D</h2>
 
 ```html
