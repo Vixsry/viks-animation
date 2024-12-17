@@ -67,9 +67,8 @@
 <script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
 <script src="path/to/viks.js"></script>
 <script>
-    const viks3D = new Viks3D();
-    viks3D.addShadow();
-    viks3D.addParallax(20);
+    viks3D.addShadow(); // Shadow
+    viks3D.addParallax(20); // Parallax Efex
 </script>
 ```
 
