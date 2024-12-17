@@ -75,7 +75,6 @@
 ```html
 <script src="path/to/viks.js"></script>
 <script>
-    const viks3D = new Viks3D();
     viks3D.addShadow();
     viks3D.addParallax(20);
 </script>
