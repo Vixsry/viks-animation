@@ -60,12 +60,7 @@
 <h2 align="center">NEW UPDATE 1.1.4</h2>
 
 ```html
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
-
-<!-- JavaScript -->
-<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
-<script src="path/to/viks.js"></script>
+<!-- ADD SHADOW -->
 <script>
     viks3D.addShadow(); // Shadow
     viks3D.addParallax(20); // Parallax Efex
