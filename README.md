@@ -74,7 +74,7 @@ npm install viks-a --save
 
 ### YARN
 ```bash
-yarn add viks-animation
+yarn add viks-a
 ```
 
 ### CDN
