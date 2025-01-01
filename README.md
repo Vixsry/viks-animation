@@ -69,7 +69,7 @@
 
 ### NPM
 ```bash
-npm install viks-animation --save
+npm install viks-a --save
 ```
 
 ### YARN
@@ -80,12 +80,12 @@ yarn add viks-animation
 ### CDN
 ```html
 <!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
+<link rel="stylesheet" href="https://unpkg.com/viks-a@latest/dist/viks.min.css">
 ```
 
 ```html
 <!-- Java Script -->
-<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
+<script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
 ```
 
 ---
