@@ -430,3 +430,36 @@ Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CO
 Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 </div>
+
+<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100">
+  <rect width="800" height="100" fill="#0a0a0a"/>
+  
+  <!-- Static glowing circles -->
+  <circle cx="100" cy="50" r="15" fill="#4CAF50" opacity="0.8"/>
+  <circle cx="100" cy="50" r="12" fill="#81C784"/>
+  <circle cx="100" cy="50" r="8" fill="#E8F5E9"/>
+  
+  <circle cx="250" cy="50" r="15" fill="#2196F3" opacity="0.8"/>
+  <circle cx="250" cy="50" r="12" fill="#64B5F6"/>
+  <circle cx="250" cy="50" r="8" fill="#E3F2FD"/>
+  
+  <circle cx="400" cy="50" r="15" fill="#9C27B0" opacity="0.8"/>
+  <circle cx="400" cy="50" r="12" fill="#BA68C8"/>
+  <circle cx="400" cy="50" r="8" fill="#F3E5F5"/>
+  
+  <circle cx="550" cy="50" r="15" fill="#FF9800" opacity="0.8"/>
+  <circle cx="550" cy="50" r="12" fill="#FFB74D"/>
+  <circle cx="550" cy="50" r="8" fill="#FFF3E0"/>
+  
+  <circle cx="700" cy="50" r="15" fill="#F44336" opacity="0.8"/>
+  <circle cx="700" cy="50" r="12" fill="#E57373"/>
+  <circle cx="700" cy="50" r="8" fill="#FFEBEE"/>
+  
+  <!-- Connecting lines -->
+  <line x1="115" y1="50" x2="235" y2="50" stroke="#4CAF50" stroke-width="2" opacity="0.5"/>
+  <line x1="265" y1="50" x2="385" y2="50" stroke="#2196F3" stroke-width="2" opacity="0.5"/>
+  <line x1="415" y1="50" x2="535" y2="50" stroke="#9C27B0" stroke-width="2" opacity="0.5"/>
+  <line x1="565" y1="50" x2="685" y2="50" stroke="#FF9800" stroke-width="2" opacity="0.5"/>
+</svg>
+</div>
