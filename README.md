@@ -430,5 +430,3 @@ Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CO
 Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 </div>
-# viks-animation
-# viks-animation
