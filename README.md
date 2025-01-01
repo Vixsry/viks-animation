@@ -409,9 +409,6 @@ Lihat demo lengkapnya di [viks-animation-demo.html](./viks-animation-demo.html) 
 ## 📝 Lisensi
 Proyek ini adalah [MIT](./LICENSE) licensed.
 
-## 🤝 Berkontribusi
-Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CONTRIBUTING.md)
-
 ---
 
 <div align="center">
@@ -430,3 +427,6 @@ Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CO
 Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 </div>
+
+## 🤝 Berkontribusi
+Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CONTRIBUTING.md)
