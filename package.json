@@ -22,7 +22,7 @@
     "url": "https://github.com/Vixsry/viks-animation/issues"
   },
   "website": "https://viksanimation.my.id/",
-  "homepage": "https://viksanimation.my.id/",
+  "homepage": "https://github.com/Vixsry/viks-animation",
   "devDependencies": {
     "terser": "^5.10.0",
     "cssnano": "^7.0.6"
