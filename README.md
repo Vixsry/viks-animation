@@ -10,7 +10,7 @@
 
 <div align="center">
   
-![Version](https://img.shields.io/badge/version-1.0.0-aqua?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.0.1-aqua?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-black?style=flat-square)
 ![Downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-aqua?style=flat-square)
 
