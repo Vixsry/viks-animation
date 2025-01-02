@@ -9,8 +9,7 @@
 </p>
 
 <div align="center">
-  
-![Version](https://img.shields.io/badge/version-1.0.1-aqua?style=flat-square)
+
 ![License](https://img.shields.io/badge/license-MIT-black?style=flat-square)
 ![Downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-aqua?style=flat-square)
 
@@ -225,28 +224,36 @@ VIKS.init({
 ```
 
 <details>
-<summary>Available Easing Functions</summary>
+  <summary>Available Easing Functions</summary>
 
-- `linear`
-- `ease`
-- `ease-in`
-- `ease-out`
-- `ease-in-out`
-- `ease-in-back`
-- `ease-out-back`
-- `ease-in-out-back`
-- `ease-in-sine`
-- `ease-out-sine`
-- `ease-in-out-sine`
-- `ease-in-quad`
-- `ease-out-quad`
-- `ease-in-out-quad`
-- `ease-in-cubic`
-- `ease-out-cubic`
-- `ease-in-out-cubic`
-- `ease-in-quart`
-- `ease-out-quart`
-- `ease-in-out-quart`
+  - `linear`
+  - `ease`
+  - `ease-in`
+  - `ease-out`
+  - `ease-in-out`
+  - `ease-in-back`
+  - `ease-out-back`
+  - `ease-in-out-back`
+  - `ease-in-sine`
+  - `ease-out-sine`
+  - `ease-in-out-sine`
+  - `ease-in-quad`
+  - `ease-out-quad`
+  - `ease-in-out-quad`
+  - `ease-in-cubic`
+  - `ease-out-cubic`
+  - `ease-in-out-cubic`
+  - `ease-in-quart`
+  - `ease-out-quart`
+  - `ease-in-out-quart`
+  - `ease-elastic`
+  - `ease-bounce`
+  - `ease-in-expo`
+  - `ease-out-expo`
+  - `ease-in-out-expo`
+  - `ease-in-circ`
+  - `ease-out-circ`
+  - `ease-in-out-circ`
 
 </details>
 
