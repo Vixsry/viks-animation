@@ -424,7 +424,7 @@ Proyek ini adalah [MIT](./LICENSE) licensed.
 
 <div align="center">
 
-Made with ❤️ by [Vixsry](https://github.com/Vixsry)
+Made with ❤️ by [VIKS ANIMATION](https://github.com/Vixsry)
 
 </div>
 
