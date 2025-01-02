@@ -5,7 +5,7 @@
   "main": "src/viks.js",
   "scripts": {
   "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js --comments '/^!|@preserve|@license|@cc_on/'",
-  "build-css": "node build-css.js",
+  "build-css": "postcss src/viks.css -o dist/viks.min.css"
   "build": "npm run build-js && npm run build-css"
 }
   "repository": {
