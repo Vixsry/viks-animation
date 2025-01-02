@@ -1,6 +1,6 @@
 /*!
  * MIT LISENSI
- * Copyright (c) 27 Nov 2024 Vixsry
+ * Copyright (c) 27 Nov 2024 VIKRI AHPAD TANTOWI
  * Lisensi   : https://github.com/Vixsry/viks-animation/blob/main/LICENSE
  * Website   : https://viksanimation.my.id/
  * Github    : https://github.com/Vixsry/viks-animation
