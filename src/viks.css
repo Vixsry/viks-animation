@@ -1,30 +1,13 @@
-/* ==============================================================================================
-
+/*!
  * MIT LISENSI
- * Copyright (c) 27 Nov 2024 Vixsry
+ * Copyright (c) 27 Nov 2024 VIKRI AHPAD TANTOWI
  * Lisensi   : https://github.com/Vixsry/viks-animation/blob/main/LICENSE
  * Website   : https://viksanimation.my.id/
  * Github    : https://github.com/Vixsry/viks-animation
- * Author    : Vixsry
+ * Author    : VIKRI AHPAD TANTOWI
  * Instagram : https://www.instagram.com/viksry12
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
-
- * NPM
-_______/
- * npm install viks-a --save
-
- * YARN
-________/
- * yarn add viks-a
-
- * CDN
-_______/
- * CSS
-<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
-
- * JS
-<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
- ============================================================================================== */
+ */
 
 /* Custom Easing Functions */
 :root {
