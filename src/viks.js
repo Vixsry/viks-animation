@@ -1,5 +1,4 @@
-/* ==============================================================================================
-
+/*!
  * MIT LISENSI
  * Copyright (c) 27 Nov 2024 Vixsry
  * Lisensi   : https://github.com/Vixsry/viks-animation/blob/main/LICENSE
@@ -8,23 +7,8 @@
  * Author    : Vixsry
  * Instagram : https://www.instagram.com/viksry12
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
+ */
 
- * NPM
-_______/
- * npm install viks-a --save
-
- * YARN
-________/
- * yarn add viks-a
-
- * CDN
-_______/
- * CSS
-<link rel="stylesheet" href="https://unpkg.com/viks-animation@latest/dist/viks.min.css">
-
- * JS
-<script src="https://unpkg.com/viks-animation@latest/dist/viks.min.js"></script>
- ============================================================================================== */
 const VIKS = {
   init(customConfig = {}) {
     this.elements = document.querySelectorAll('[data-viks]');
