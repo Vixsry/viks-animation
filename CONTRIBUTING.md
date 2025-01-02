@@ -12,18 +12,6 @@
 
 Pertama-tama, terima kasih telah mempertimbangkan untuk berkontribusi pada VIKS Animation Library! Orang-orang seperti Anda yang membuat VIKS menjadi alat yang hebat. Dokumen ini memberikan panduan dan langkah-langkah untuk berkontribusi.
 
-## 📑 Daftar Isi
-
-- [Kode Etik](#kode-etik)
-- [Memulai](#memulai)
-- [Proses Pengembangan](#proses-pengembangan)
-- [Proses Pull Request](#proses-pull-request)
-- [Standar Koding](#standar-koding)
-- [Panduan Commit](#panduan-commit)
-- [Dokumentasi](#dokumentasi)
-- [Panduan Pengujian](#panduan-pengujian)
-- [Komunitas](#komunitas)
-
 ## 📜 Kode Etik
 
 Dengan berpartisipasi dalam proyek ini, Anda diharapkan untuk mematuhi Kode Etik kami:
@@ -33,47 +21,6 @@ Dengan berpartisipasi dalam proyek ini, Anda diharapkan untuk mematuhi Kode Etik
 - Terima kritik konstruktif dengan baik
 - Fokus pada apa yang terbaik untuk komunitas
 - Tunjukkan empati terhadap anggota komunitas lainnya
-
-## 🚀 Memulai
-
-1. **Fork Repository**
-   ```bash
-   git clone https://github.com/Vixsry/viks-animation.git
-   cd viks-animation
-   ```
-
-2. **Instal Dependensi**
-   ```bash
-   npm i viks-animation
-   ```
-
-3. **Buat Branch**
-   ```bash
-   git checkout -b feature/nama-fitur-anda
-   ```
-
-4. **Jalankan Lingkungan Pengembangan**
-   ```bash
-   npm run dev
-   ```
-
-## 💻 Proses Pengembangan
-
-### Pengaturan Lingkungan
-
-```bash
-# Instal dependensi pengembangan
-npm install --save-dev
-
-# Mulai server pengembangan
-npm run dev
-
-# Jalankan pengujian
-npm test
-
-# Build untuk produksi
-npm run build
-```
 
 ## 🔄 Proses Pull Request
 
