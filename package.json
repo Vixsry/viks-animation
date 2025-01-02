@@ -13,6 +13,7 @@
     "url": "git+https://github.com/Vixsry/viks-animation.git"
   },
   "keywords": [
+    "viks-a",
     "viks-animation"
   ],
   "author": "VIKRI AHPAD TANTOWI",
@@ -20,7 +21,8 @@
   "bugs": {
     "url": "https://github.com/Vixsry/viks-animation/issues"
   },
-  "homepage": "https://viksanimation.my.id",
+  "website": "https://viksanimation.my.id/",
+  "homepage": "https://viksanimation.my.id/",
   "devDependencies": {
     "terser": "^5.10.0",
     "cssnano": "^7.0.6"
