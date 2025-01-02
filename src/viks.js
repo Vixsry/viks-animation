@@ -64,7 +64,7 @@ const VIKS = {
       offset: 120,
       delay: 0,
       duration: 400,
-      easing: 'ease-in-quint',
+      easing: 'ease'
       once: false,
       mirror: false,
       anchorPlacement: 'top-bottom',
