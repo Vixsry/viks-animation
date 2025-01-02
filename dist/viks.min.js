@@ -11,11 +11,11 @@
 
  * NPM
 _______/
- * npm install viks-animation --save
+ * npm install viks-a --save
 
  * YARN
 ________/
- * yarn add viks-animation
+ * yarn add viks-a
 
  * CDN
 _______/
