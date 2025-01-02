@@ -7,7 +7,7 @@ module.exports = {
  * Lisensi   : https://github.com/Vixsry/viks-animation/blob/main/LICENSE
  * Website   : https://viksanimation.my.id/
  * Github    : https://github.com/Vixsry/viks-animation
- * Author    : Vixsry
+ * Author    : VIKRI AHPAD TANTOWI
  * Instagram : https://www.instagram.com/viksry12
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
  */`,
