@@ -123,15 +123,24 @@ viks3D.addParallax(20);
 ```
 
 ```javascript
-// Inisialisasi dasar dengan konfigurasi global
 VIKS.init({
-    offset: 120, // Jarak pemicu animasi (px)
-    duration: 800, // Durasi default animasi (ms)
-    easing: 'ease-out', // Fungsi waktu default
-    once: true, // Animasi hanya sekali atau berulang
-    disable: 'mobile', // Nonaktifkan pada perangkat tertentu
-    threshold: 0.2, // Nilai ambang untuk pemicu
-    throttle: 100, // Batas waktu untuk acara scroll (ms)
+  thresholdTop: 0.2, // Mengatur threshold saat elemen muncul di atas viewport
+  thresholdBottom: 0.2, // Mengatur threshold saat elemen muncul di bawah viewport
+  disable: false, // Menonaktifkan animasi jika diatur ke true
+  startEvent: 'load', // Menunggu hingga halaman sepenuhnya dimuat
+  animatedClassName: 'viks-animate', // Menambahkan kelas animasi pada elemen yang teranimasikan
+  initClassName: 'viks-init', // Kelas yang ditambahkan pada elemen yang sudah terinialisasi
+  useClassNames: false, // Mengaktifkan atau menonaktifkan penggunaan kelas CSS
+  throttleDelay: 100, // Mengatur waktu penundaan untuk throttle saat scroll
+  debounceDelay: 50, // Mengatur waktu penundaan untuk debounce saat resize
+  offset: 120, // Menambah jarak offset dari viewport
+  delay: 0, // Menunda animasi setelah elemen muncul
+  duration: 800, // Durasi animasi
+  easing: 'ease-in-out', // Fungsi easing default
+  once: false, // Animasi berjalan sekali saja
+  mirror: true, // Menampilkan animasi dua arah (mirroring)
+  animateTop: false,  // Matikan semua animasi scroll ke atas
+  animateBottom: true // Aktifkan animasi scroll ke bawah
 });
 ```
 
