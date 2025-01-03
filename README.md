@@ -86,7 +86,7 @@ yarn add viks-a
 ```html
 <!-- VIKS ANIMATION JS
 ========================-->
-    <script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
+<script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
 ```
 
 ---
