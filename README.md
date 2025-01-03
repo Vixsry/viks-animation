@@ -78,13 +78,15 @@ yarn add viks-a
 
 ### CDN
 ```html
-<!-- CSS -->
+<!-- VIKS ANIMATION CSS
+========================-->
 <link rel="stylesheet" href="https://unpkg.com/viks-a@latest/dist/viks.min.css">
 ```
 
 ```html
-<!-- Java Script -->
-<script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
+<!-- VIKS ANIMATION JS
+========================-->
+    <script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
 ```
 
 ---
