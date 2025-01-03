@@ -14,7 +14,7 @@ const VIKS = {
     this.elements = document.querySelectorAll('[data-viks]');
     this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
-    
+
     // Mapping easing names to CSS cubic-bezier values
     this.easingMap = {
       'linear': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
@@ -49,7 +49,7 @@ const VIKS = {
       'ease-elastic': 'cubic-bezier(0.5, 0.75, 0.150, 1.650)',
       'ease-bounce': 'cubic-bezier(0.3, 2.1, 0.6, 0.8)',
     };
-    
+
     this.config = {
       thresholdTop: 0.1,
       thresholdBottom: 0.1,
@@ -68,6 +68,8 @@ const VIKS = {
       once: false,
       mirror: false,
       anchorPlacement: 'top-bottom',
+      animateTop: true,
+      animateBottom: true,
       ...customConfig
     };
 
@@ -83,7 +85,7 @@ applyGlobalStyles() {
     // Create style element for global settings
     const styleEl = document.createElement('style');
     const easingValue = this.easingMap[this.config.easing] || this.config.easing;
-    
+
     styleEl.textContent = `
       [data-viks] {
         transition-duration: ${this.config.duration}ms;
@@ -97,10 +99,10 @@ applyGlobalStyles() {
         }
       `).join('\n')}
     `;
-    
+
     document.head.appendChild(styleEl);
   },
-  
+
   setupEventListeners() {
     // Debounced resize handler
     let resizeTimeout;
@@ -152,8 +154,10 @@ applyGlobalStyles() {
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const element = entry.target;
-        const animateTop = element.getAttribute('data-viks-animation-top') !== 'off';
-        const animateBottom = element.getAttribute('data-viks-animation-bottom') !== 'off';
+        
+        // Check element-specific animation controls
+        const animateTop = element.getAttribute('data-viks-animation-top') !== 'off' && this.config.animateTop;
+        const animateBottom = element.getAttribute('data-viks-animation-bottom') !== 'off' && this.config.animateBottom;
         const once = element.getAttribute('data-viks-once') || this.config.once;
 
         if (entry.isIntersecting) {
@@ -165,6 +169,7 @@ applyGlobalStyles() {
           const boundingRect = element.getBoundingClientRect();
           const scrollingUp = boundingRect.top > this.windowHeight;
 
+          // Apply animation based on scroll direction and configuration
           if ((scrollingUp && animateTop) || (!scrollingUp && animateBottom)) {
             if (!once || !this.initializedElements.has(element)) {
               this.removeAnimation(element);
@@ -178,6 +183,17 @@ applyGlobalStyles() {
       this.observer.observe(element);
       element.classList.add(this.config.initClassName);
     });
+  },
+  
+  // Method to update animation settings
+  updateAnimationSettings(settings = {}) {
+    this.config = {
+      ...this.config,
+      ...settings
+    };
+    
+    // Refresh all elements with new settings
+    this.refreshAll();
   },
 
   initMutationObserver() {
@@ -223,14 +239,14 @@ applyGlobalStyles() {
     element.style.transitionDuration = `${duration}ms`;
     element.style.transitionDelay = `${delay}ms`;
     element.style.transitionTimingFunction = easing;
-    
+
     // Get easing from data attribute or config
     const easingAttr = element.getAttribute('data-viks');
     const easingMatch = Object.keys(this.easingMap).find(key => easingAttr?.includes(key));
     const easingValue = this.easingMap[easingMatch] || this.easingMap[easing] || easing;
-    
+
     element.style.transitionTimingFunction = easingValue;
-    
+
     // Rest of the applyAnimation logic...
     requestAnimationFrame(() => {
       element.classList.add(this.config.animatedClassName);
