@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-  <strong>Pustaka JavaScript ringan untuk animasi gulir yang halus dan menarik</strong>
+  <strong>Lightweight JavaScript library for smooth and engaging scroll animations</strong>
 </div>
 
 <div align="center">
@@ -26,7 +26,7 @@
 
 ---
 
-<h2 align="center">HUBUNGI PENGEMBANG</h2>
+<h2 align="center">CONTACT DEVELOPER</h2>
 <div align="center">
   
 [![Email](https://img.shields.io/badge/Email-aqua?style=for-the-badge&logo=gmail&logoColor=black)](mailto:viksry@proton.me)
@@ -40,7 +40,7 @@
 
 ---
 
-<h2 align="center">ANIMASI YANG TERSEDIA</h2>
+<h2 align="center">AVAILABLE ANIMATIONS</h2>
 
 <div align="center">
 
@@ -49,14 +49,14 @@
 [![Slide](https://img.shields.io/badge/Slide-Animations-aqua?style=flat-square&logoColor=black)](#slide-animations)
 [![Zoom](https://img.shields.io/badge/Zoom-Animations-black?style=flat-square&logoColor=aqua)](#zoom-animations)
 [![Shake](https://img.shields.io/badge/Shake-Animations-black?style=flat-square&logoColor=aqua)](#Shake-Animation)
-[![Shpin](https://img.shields.io/badge/Spin-Animations-aqua?style=flat-square&logoColor=black)](#Spin-Animation)
+[![Spin](https://img.shields.io/badge/Spin-Animations-aqua?style=flat-square&logoColor=black)](#Spin-Animation)
 [![Bounce](https://img.shields.io/badge/Bounce-Animations-aqua?style=flat-square&logoColor=black)](#Bounce-Animation)
 
 </div>
 
 ---
 
-<h2 align="center">INSTALASI</h2>
+<h2 align="center">INSTALLATION</h2>
 
 <div align="center">
 
@@ -91,13 +91,13 @@ yarn add viks-a
 
 ---
 
-<h2 align="center">PEMASANGAN MANUAL</h2>
+<h2 align="center">MANUAL INSTALLATION</h2>
 
-1. Unduh File Java Script Dan CSS:
+1. Download the JavaScript and CSS files:
    - `viks.css`
    - `viks.js`
 
-2. Masukan Ke HTML Seperti Contoh Ini:
+2. Add them to your HTML as shown below:
 ```html
 <!-- CSS -->
 <link rel="stylesheet" href="path/to/viks.css">
@@ -107,16 +107,16 @@ yarn add viks-a
 ```
 ---
 
-<h2 align="center">INISIALISASI</h2>
+<h2 align="center">INITIALIZATION</h2>
 
 ```javascript
-// VIKS ANIMASI SCROLL
+// VIKS SCROLL ANIMATION
 VIKS.init()
 
-// VIKS ANIMASI NUMBER
+// VIKS NUMBER ANIMATION
 VIKSNumber.init();
 
-// VIKS 3D ANIMASI
+// VIKS 3D ANIMATION
 const viks3D = new Viks3D(); 
 viks3D.addShadow();
 viks3D.addParallax(20);
@@ -124,56 +124,56 @@ viks3D.addParallax(20);
 
 ```javascript
 VIKS.init({
-  thresholdTop: 0.2, // Mengatur threshold saat elemen muncul di atas viewport
-  thresholdBottom: 0.2, // Mengatur threshold saat elemen muncul di bawah viewport
-  disable: false, // Menonaktifkan animasi jika diatur ke true
-  startEvent: 'load', // Menunggu hingga halaman sepenuhnya dimuat
-  animatedClassName: 'viks-animate', // Menambahkan kelas animasi pada elemen yang teranimasikan
-  initClassName: 'viks-init', // Kelas yang ditambahkan pada elemen yang sudah terinialisasi
-  useClassNames: false, // Mengaktifkan atau menonaktifkan penggunaan kelas CSS
-  throttleDelay: 100, // Mengatur waktu penundaan untuk throttle saat scroll
-  debounceDelay: 50, // Mengatur waktu penundaan untuk debounce saat resize
-  offset: 120, // Menambah jarak offset dari viewport
-  delay: 0, // Menunda animasi setelah elemen muncul
-  duration: 800, // Durasi animasi
-  easing: 'ease-in-out', // Fungsi easing default
-  once: false, // Animasi berjalan sekali saja
-  mirror: true, // Menampilkan animasi dua arah (mirroring)
-  animateTop: false,  // Matikan semua animasi scroll ke atas
-  animateBottom: true // Aktifkan animasi scroll ke bawah
+  thresholdTop: 0.2, // Set threshold when element appears at the top of the viewport
+  thresholdBottom: 0.2, // Set threshold when element appears at the bottom of the viewport
+  disable: false, // Disable animation if set to true
+  startEvent: 'load', // Wait until the page is fully loaded
+  animatedClassName: 'viks-animate', // Add animation class to animated elements
+  initClassName: 'viks-init', // Class added to initialized elements
+  useClassNames: false, // Enable or disable the use of CSS classes
+  throttleDelay: 100, // Set delay time for throttle on scroll
+  debounceDelay: 50, // Set delay time for debounce on resize
+  offset: 120, // Add offset distance from the viewport
+  delay: 0, // Delay animation after element appears
+  duration: 800, // Animation duration
+  easing: 'ease-in-out', // Default easing function
+  once: false, // Animation runs only once
+  mirror: true, // Display animation in both directions (mirroring)
+  animateTop: false,  // Turn off all scroll-up animations
+  animateBottom: true // Enable scroll-down animations
 });
 ```
 
 ---
 
-<h2 align="center">CARA PENGGUNAAN</h2>
+<h2 align="center">USAGE</h2>
 
 ---
 
-<p align="center">ANIMASI ON SCROLL</p>
+<p align="center">ON SCROLL ANIMATION</p>
 
 ```html
-<!-- Penggunaan Dasar
+<!-- Basic Usage
 =====================-->
 <div data-viks="fade-up">
-  CONTENT VIKS
+  VIKS CONTENT
 </div>
 ```
 
 ```html
-<!-- Animasi Sesuai Ukuran Layar
+<!-- Animation Based on Screen Size
 ================================-->
 <div data-viks="fade-up"
      data-viks-desktop="zoom-in"
      data-viks-tablet="fade-left"
      data-viks-mobile="fade-down">
-    VIKS CONTEN
+    VIKS CONTENT
 </div>
 ```
 
 
 ```html
-<!-- Kontrol Delay 1
+<!-- Control Delay 1
 =====================-->
 <div data-viks="fade-up" data-viks-delay="1000">
   VIKS CONTENT
@@ -181,7 +181,7 @@ VIKS.init({
 ```
 
 ```html
-<!-- Kontrol Delay 2
+<!-- Control Delay 2
 =====================-->
 <div data-viks="fade-up delay-1000">
   VIKS CONTENT
@@ -189,7 +189,7 @@ VIKS.init({
 ```
 
 ```html
-<!-- Kontrol Durasi 1
+<!-- Control Duration 1
 ======================-->
 <div data-viks="fade-up" data-viks-duration="2000">
   2 seconds duration
@@ -197,7 +197,7 @@ VIKS.init({
 ```
 
 ```html
-<!-- Kontrol Durasi 2
+<!-- Control Duration 2
 ======================-->
 <div data-viks="fade-up duration-2000">
   2 seconds duration
@@ -205,13 +205,13 @@ VIKS.init({
 ```
 
 ```html
-<!-- MEMATIKAN ANIMASI SCROLL KE ATAS
+<!-- DISABLE SCROLL UP ANIMATION
 =====================================================-->
 <div data-viks="fade-up" data-viks-animation-top="off">
   No animation on upscroll
 </div>
 
-<!-- MEMATIKAN ANIMASI SCROLL BAWAH
+<!-- DISABLE SCROLL DOWN ANIMATION
 ===========================================================-->
 <div data-viks="fade-up" data-viks-animation-bottom="off">
   No animation on downscroll
@@ -219,7 +219,7 @@ VIKS.init({
 ```
 
 ```html
-<!-- MENGABUNGKAN BEBERAPA ATRIBUT 
+<!-- COMBINE MULTIPLE ATTRIBUTES 
 ================================================================-->
 <div data-viks="fade-up delay-1000 duration-2000 easing-ease-out">
   Multiple attributes combination
@@ -270,12 +270,12 @@ VIKS.init({
 
 ___
 
-<p align="center">3D ANIMASI</p>
+<p align="center">3D ANIMATION</p>
 
 ---
 
 ```html
-<!-- PENGGUNAAN 3D ANIMATION
+<!-- USAGE OF 3D ANIMATION
 ===============================-->
 <div data-viks="3D">
     <h2>Examples</h2>
@@ -285,19 +285,19 @@ ___
 
 ---
 
-<p align="center">NUMBER ANIMASI</p>
+<p align="center">NUMBER ANIMATION</p>
 
 ---
 
 ```html
-<!-- PENGGUNAAN ANIMATION NUMBER
+<!-- USAGE OF NUMBER ANIMATION
 ===========================================================-->
 <span data-viks="type-nbr duration-1000 fps-120">1000</span>
 <span data-viks="type-nbr">1000</span>
 ```
 or
 ```html
-<!-- PENGGUNAAN KOMBINASI FPS,DURASI DAN KONTROL ANIMASI
+<!-- USAGE COMBINATION OF FPS, DURATION, AND ANIMATION CONTROL
 ===========================================================-->
 <span data-viks="type-nbr duration-2000 fps-60 bottom-off">2000</span>
 ```
@@ -397,18 +397,18 @@ document.addEventListener('viksHidden', function(event) {
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=white&color=aqua&width=435&lines=Support+my+work;Buy+Me+Golda+Coffee!+.☕)](https://ko-fi.com/viksry)
 
-<p align="center">Ucapkan Terima Kasih dengan Mentraktir Seseorang Kopi!.</p>
+<p align="center">Say Thank You by Buying Someone a Coffee!.</p>
 
 <a href="https://ko-fi.com/viksry">
   <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200">
 </a>
 
-Dukungan Anda membantu saya terus membuat dan memelihara proyek! ✨
+Your support helps me to continue creating and maintaining projects! ✨
 
 </div>
 
 
-<h2 align="center">DUKUNGAN BROWSER</h2>
+<h2 align="center">BROWSER SUPPORT</h2>
 
 <div align="center">
 
@@ -422,10 +422,10 @@ Dukungan Anda membantu saya terus membuat dan memelihara proyek! ✨
 
 <h2 align="center">DEMO</h2>
 
-Lihat demo lengkapnya di [viks-animation-demo.html](./viks-animation-demo.html) file.
+See the full demo in the [viks-animation-demo.html](./viks-animation-demo.html) file.
 
-## 📝 Lisensi
-Proyek ini adalah [MIT](./LICENSE) licensed.
+## 📝 License
+This project is [MIT](./LICENSE) licensed.
 
 ---
 
@@ -434,7 +434,7 @@ Proyek ini adalah [MIT](./LICENSE) licensed.
 [![Portfolio](https://img.shields.io/badge/Portfolio-aqua?style=for-the-badge&logo=github&logoColor=black)](https://viksry.my.id)
 [![Star](https://img.shields.io/badge/Star-black?style=for-the-badge&logo=github&logoColor=aqua)](https://github.com/Vixsry/viks-animation)
 
-<h3><span style="color: aqua">✨ "Membawa Kehidupan ke Elemen Web" ✨</span></h3>
+<h3><span style="color: aqua">✨ "Bringing Life to Web Elements" ✨</span></h3>
 
 </div>
 
@@ -446,5 +446,5 @@ Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 </div>
 
-## 🤝 Berkontribusi
-Kontribusi, masalah, dan permintaan fitur diterima! Lihat [CONTRIBUTING.md](./CONTRIBUTING.md)
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md)
