@@ -4,10 +4,11 @@
   "description": "Pustaka JavaScript ringan untuk animasi gulir yang halus dan menarik",
   "main": "src/viks.js",
   "scripts": {
-  "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
-  "build-css": "node build-css.js",
-  "build": "npm run build-js && npm run build-css"
-},
+    "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
+    "build-css": "node build-css.js",
+    "build": "npm run build-js && npm run build-css && node build-animation.js",
+    "postinstall": "node postinstall.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vixsry/viks-animation.git"
@@ -25,6 +26,8 @@
   "homepage": "https://github.com/Vixsry/viks-animation",
   "devDependencies": {
     "terser": "^5.10.0",
-    "cssnano": "^7.0.6"
+    "cssnano": "^7.0.6",
+    "ora": "^6.1.2",
+    "chalk": "^5.3.0"
   }
 }
