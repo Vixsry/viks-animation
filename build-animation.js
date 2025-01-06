@@ -8,11 +8,11 @@ const theme = {
   success: chalk.green,
   error: chalk.red,
   info: chalk.blue,
-  warning: chalk.keyword('orange'),
+  warning: chalk.hex('#FFA500'),
   detail: chalk.gray
 };
 
-// Custom spinner frames for smoother animation
+// Custom spinner frames
 const spinnerFrames = ['◜', '◠', '◝', '◞', '◡', '◟'];
 
 // Build configuration details
@@ -34,7 +34,6 @@ const formatSize = (bytes) => {
 
 // Main build function
 async function buildLibrary() {
-  // Initialize spinner
   const spinner = ora({
     text: theme.primary('Initializing viks-a build process...'),
     spinner: spinnerFrames,
@@ -53,24 +52,19 @@ async function buildLibrary() {
       details: () => `${theme.detail('→ Preparing: ')}${buildConfig.output}`
     },
     {
-      name: 'Transpiling JavaScript',
-      duration: 1200,
-      details: () => `${theme.detail('→ Processing source files with Babel')}`
+      name: 'Processing CSS files',
+      duration: 1000,
+      details: () => `${theme.detail('→ Compiling from viks.js')}`
     },
     {
-      name: 'Bundling modules',
-      duration: 1000,
-      details: () => `${theme.detail('→ Creating optimized bundles')}`
+      name: 'Bundling animations',
+      duration: 1200,
+      details: () => `${theme.detail('→ Creating animation bundles')}`
     },
     {
       name: 'Minifying output',
       duration: 800,
-      details: () => `${theme.detail('→ Optimizing bundle size')}`
-    },
-    {
-      name: 'Generating types',
-      duration: 600,
-      details: () => `${theme.detail('→ Creating TypeScript declarations')}`
+      details: () => `${theme.detail('→ Optimizing file size')}`
     }
   ];
 
@@ -94,21 +88,21 @@ async function buildLibrary() {
     }
 
     // Build success
-    spinner.succeed(theme.success('Build completed successfully! 🎉'));
+    spinner.succeed(theme.success('CSS Build completed successfully! 🎉'));
     
     // Display build summary
     console.log('\n' + theme.primary('Build Summary:'));
     console.log(theme.detail('─────────────────────────'));
-    console.log(theme.info(`📦 Main Bundle: ${buildResults.mainBundle}`));
-    console.log(theme.info(`📦 Minified: ${buildResults.minifiedSize}`));
-    console.log(theme.info(`📦 Gzipped: ${buildResults.gzippedSize}`));
+    console.log(theme.info(`📦 Main CSS Bundle: ${buildResults.mainBundle}`));
+    console.log(theme.info(`📦 Minified CSS: ${buildResults.minifiedSize}`));
+    console.log(theme.info(`📦 Gzipped Size: ${buildResults.gzippedSize}`));
     console.log(theme.detail('─────────────────────────'));
     
     // Output locations
     console.log('\n' + theme.success('Output Files:'));
-    console.log(theme.info(`📁 Main: ${path.join(buildConfig.output, 'viks.js')}`));
-    console.log(theme.info(`📁 Minified: ${path.join(buildConfig.output, 'viks.min.js')}`));
-    console.log(theme.info(`📁 Types: ${path.join(buildConfig.output, 'viks.ts')}`));
+    console.log(theme.info(`📁 Source: ${path.join('src', 'viks.js')}`));
+    console.log(theme.info(`📁 Main: ${path.join(buildConfig.output, 'viks.css')}`));
+    console.log(theme.info(`📁 Minified: ${path.join(buildConfig.output, 'viks.min.css')}`));
     
     // Build info
     console.log('\n' + theme.primary('Build Information:'));
@@ -117,12 +111,12 @@ async function buildLibrary() {
     
     // Next steps
     console.log('\n' + theme.success('Next Steps:'));
-    console.log(theme.info('1. Import your library:'));
-    console.log(theme.detail('   import { VikAnimation } from "viks-a";'));
-    console.log(theme.info('2. View documentation:'));
-    console.log(theme.detail('   https://viksanimation.my.id/docs'));
-    console.log(theme.info('3. Run tests:'));
-    console.log(theme.detail('   npm run test\n'));
+    console.log(theme.info('1. Include the CSS in your project:'));
+    console.log(theme.detail('   <link href="dist/viks.min.css" rel="stylesheet">'));
+    console.log(theme.info('2. Try example animation:'));
+    console.log(theme.detail('   <div class="viks-fade"></div>'));
+    console.log(theme.info('3. View documentation:'));
+    console.log(theme.detail('   https://viksanimation.my.id/docs\n'));
 
   } catch (error) {
     // Error handling
@@ -131,7 +125,7 @@ async function buildLibrary() {
     console.error(theme.error(error.stack));
     
     console.log('\n' + theme.warning('Troubleshooting Tips:'));
-    console.log(theme.detail('1. Check for syntax errors in source files'));
+    console.log(theme.detail('1. Check viks.js syntax'));
     console.log(theme.detail('2. Verify all dependencies are installed'));
     console.log(theme.detail('3. Ensure sufficient disk space'));
     console.log(theme.detail('4. Check build configuration'));
