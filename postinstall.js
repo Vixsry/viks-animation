@@ -17,17 +17,17 @@ const spinnerChars = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '�
 function installPackage() {
   return new Promise((resolve, reject) => {
     const spinner = ora({
-      text: colors.loading('Initializing viks-a library installation...'),
+      text: colors.loading('Initializing Viks Animation installation...'),
       spinner: spinnerChars,
       color: 'blue'
     }).start();
 
     const steps = [
       { message: 'Checking dependencies...', duration: 1000 },
-      { message: 'Downloading package files...', duration: 1500 },
-      { message: 'Extracting files...', duration: 800 },
-      { message: 'Configuring settings...', duration: 1200 },
-      { message: 'Finalizing installation...', duration: 500 }
+      { message: 'Downloading Viks Animation files...', duration: 1500 },
+      { message: 'Extracting resources...', duration: 800 },
+      { message: 'Configuring animation settings...', duration: 1200 },
+      { message: 'Finalizing setup...', duration: 500 }
     ];
 
     let currentStep = 0;
@@ -47,12 +47,15 @@ function installPackage() {
           spinner.fail(colors.error('Installation failed: Connection timeout'));
           reject(new Error('Installation failed: Connection timeout'));
         } else {
-          spinner.succeed(colors.success('Installation complete! viks-a is ready to use.'));
+          spinner.succeed(colors.success('Installation complete! Viks Animation is ready to use.'));
           console.log('\n' + colors.info('Quick Start Guide:'));
-          console.log(colors.info('- Import viks-a using: import viks from "viks-a"'));
-          console.log(colors.info('- View documentation at: https://docs.viks-a.dev'));
-          console.log(colors.info('- Join our Discord community: https://discord.gg/viks-a'));
-          console.log(colors.info('- Report issues: https://github.com/viks-a/issues\n'));
+          console.log(colors.info('- Visit our website: https://viksanimation.my.id'));
+          console.log(colors.info('- Documentation: https://viksanimation.my.id/docs'));
+          console.log(colors.info('- Examples: https://viksanimation.my.id/examples'));
+          console.log(colors.info('- Support: https://viksanimation.my.id/support\n'));
+          
+          console.log(colors.success('Thank you for installing Viks Animation!'));
+          console.log(colors.success('Start creating amazing animations today!\n'));
           resolve();
         }
       }
@@ -71,7 +74,7 @@ installPackage()
     console.log(colors.warning('1. Check your internet connection'));
     console.log(colors.warning('2. Clear npm cache: npm cache clean --force'));
     console.log(colors.warning('3. Try reinstalling the package'));
-    console.log(colors.warning('4. Check system compatibility'));
-    console.log(colors.warning('5. Verify Node.js version requirements\n'));
-    console.log(colors.info('For additional support, visit: https://support.viks-a.dev\n'));
+    console.log(colors.warning('4. Visit https://viksanimation.my.id/support for help'));
+    console.log(colors.warning('5. Check system compatibility\n'));
+    console.log(colors.info('Need help? Visit: https://viksanimation.my.id/contact\n'));
   });
