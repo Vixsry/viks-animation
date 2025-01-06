@@ -1,6 +1,6 @@
 {
   "name": "viks-a",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Pustaka JavaScript ringan untuk animasi gulir yang halus dan menarik",
   "main": "src/viks.js",
   "scripts": {
