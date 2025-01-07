@@ -5,7 +5,7 @@
 </h1>
 
 <div align="center">
-  <img src="src/viks-swip-logo.png" alt="VIKS SWIP Logo" width="200"/>
+  <img src="assets/viks-swip-logo.png" alt="VIKS SWIP Logo" width="200"/>
 
   <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-Library-aqua?style=for-the-badge&logoColor=black" alt="JavaScript Library Badge"/>
