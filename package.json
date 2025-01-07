@@ -2,7 +2,7 @@
   "name": "viks-a",
   "version": "1.0.5",
   "description": "Library JavaScript ringan untuk animasi scroll yang halus dan menarik.",
-  "main": "dist/viks.min.js",
+  "main": "src/viks.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
