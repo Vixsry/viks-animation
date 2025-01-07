@@ -4,9 +4,24 @@
   </span>
 </h1>
 
-<p align="center">
+<div align="center">
+  <img src="src/viks-swip-logo.png" alt="VIKS SWIP Logo" width="200"/>
+
+  <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-Library-aqua?style=for-the-badge&logoColor=black" alt="JavaScript Library Badge"/>
 </p>
+</div>
+
+<div align="center">
+
+<a href="https://github.com/Vixsry/viks-swip/blob/main/LICENSE" target="_blank">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=flat-square" alt="License Badge">
+</a>
+<a href="https://example.com/dashboard" target="_blank">
+  <img src="https://img.shields.io/badge/DOWNLOAD-1K%2FMONTH-aqua?style=flat-square" alt="Downloads Badge">
+</a>
+
+</div>
 
 <div align="center">
 
