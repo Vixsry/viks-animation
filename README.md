@@ -95,9 +95,7 @@ yarn add viks-a
 ```html
 <!-- VIKS ANIMATION JS
 ========================-->
-<script src="
-https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js
-"></script>
+<script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
 
 ---
