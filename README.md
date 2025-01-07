@@ -1,6 +1,6 @@
 <h1 align="center">
   <span style="background: linear-gradient(45deg, #00FFFF, #40E0D0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-     VIKS ANIMATION
+     🌊 VIKS ANIMATION
   </span>
 </h1>
 
