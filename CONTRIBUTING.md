@@ -1,4 +1,4 @@
-# Berkontribusi ke VIKS Animation Library
+# Contributing to VIKS Animation Library
 
 <div align="center">
 
@@ -8,98 +8,98 @@
 
 </div>
 
-## 🌟 Selamat Datang!
+## 🌟 Welcome!
 
-Pertama-tama, terima kasih telah mempertimbangkan untuk berkontribusi pada VIKS Animation Library! Orang-orang seperti Anda yang membuat VIKS menjadi alat yang hebat. Dokumen ini memberikan panduan dan langkah-langkah untuk berkontribusi.
+First of all, thank you for considering contributing to VIKS Animation Library! People like you make VIKS a great tool. This document provides guidelines and steps for contributing.
 
-## 📜 Kode Etik
+## 📜 Code of Conduct
 
-Dengan berpartisipasi dalam proyek ini, Anda diharapkan untuk mematuhi Kode Etik kami:
+By participating in this project, you are expected to uphold our Code of Conduct:
 
-- Gunakan bahasa yang ramah dan inklusif
-- Hormati perbedaan sudut pandang dan pengalaman
-- Terima kritik konstruktif dengan baik
-- Fokus pada apa yang terbaik untuk komunitas
-- Tunjukkan empati terhadap anggota komunitas lainnya
+- Use friendly and inclusive language
+- Respect different viewpoints and experiences
+- Accept constructive criticism gracefully
+- Focus on what's best for the community
+- Show empathy towards other community members
 
-## 🔄 Proses Pull Request
+## 🔄 Pull Request Process
 
-1. **Konvensi Penamaan Branch**
-   - Fitur: `feature/deskripsi`
-   - Perbaikan Bug: `fix/deskripsi`
-   - Dokumentasi: `docs/deskripsi`
-   - Performa: `perf/deskripsi`
+1. **Branch Naming Convention**
+   - Feature: `feature/description`
+   - Bug Fix: `fix/description`
+   - Documentation: `docs/description`
+   - Performance: `perf/description`
 
-2. **Sebelum Mengirim PR**
-   - Perbarui README.md dengan detail perubahan (jika diperlukan)
-   - Perbarui dokumentasi
-   - Tambah atau perbarui pengujian
-   - Pastikan semua pengujian berhasil
-   - Perbarui nomor versi mengikuti [SemVer](http://semver.org/)
+2. **Before Submitting PR**
+   - Update README.md with details of changes (if needed)
+   - Update documentation
+   - Add or update tests
+   - Ensure all tests pass
+   - Update version numbers following [SemVer](http://semver.org/)
 
-3. **Template PR**
+3. **PR Template**
    ```markdown
-   ## Deskripsi
-   [Jelaskan perubahan Anda]
+   ## Description
+   [Describe your changes]
 
-   ## Jenis Perubahan
-   - [ ] Perbaikan bug
-   - [ ] Fitur baru
-   - [ ] Perubahan yang merusak
-   - [ ] Pembaruan dokumentasi
+   ## Type of Change
+   - [ ] Bug fix
+   - [ ] New feature
+   - [ ] Breaking change
+   - [ ] Documentation update
 
    ## Checklist
-   - [ ] Kode saya mengikuti panduan gaya
-   - [ ] Saya telah melakukan peninjauan mandiri
-   - [ ] Saya telah menambahkan komentar pada kode
-   - [ ] Saya telah memperbarui dokumentasi
-   - [ ] Saya telah menambahkan pengujian
-   - [ ] Semua pengujian berhasil
+   - [ ] My code follows the style guidelines
+   - [ ] I have performed a self-review
+   - [ ] I have commented my code
+   - [ ] I have updated the documentation
+   - [ ] I have added tests
+   - [ ] All tests pass
    ```
 
-## 📝 Standar Koding
+## 📝 Coding Standards
 
-### Panduan Gaya JavaScript
+### JavaScript Style Guide
 
-- Gunakan fitur ES6+
-- Ikuti konfigurasi Prettier
-- Panjang maksimum baris: 100 karakter
-- Gunakan nama variabel yang bermakna
-- Dokumentasikan logika yang kompleks
+- Use ES6+ features
+- Follow Prettier configuration
+- Maximum line length: 100 characters
+- Use meaningful variable names
+- Document complex logic
 
 ```javascript
-// ✅ Baik
+// ✅ Good
 const calculateOffset = (element, options) => {
   const { offset = 0 } = options;
   return element.getBoundingClientRect().top + offset;
 };
 
-// ❌ Buruk
+// ❌ Bad
 const calc = (e, o) => {
   return e.getBoundingClientRect().top + (o.offset || 0);
 };
 ```
 
-### Panduan Gaya CSS
+### CSS Style Guide
 
 ```css
-/* ✅ Baik */
+/* ✅ Good */
 .viks-animation {
   transform: translateY(20px);
   opacity: 0;
   transition: all 0.3s ease;
 }
 
-/* ❌ Buruk */
+/* ❌ Bad */
 .anim {
   transform:translateY(20px);opacity:0;
   transition: all .3s ease
 }
 ```
 
-## 📊 Panduan Commit
+## 📊 Commit Guidelines
 
-Ikuti [Conventional Commits](https://www.conventionalcommits.org/):
+Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
 <type>(<scope>): <description>
@@ -109,55 +109,55 @@ Ikuti [Conventional Commits](https://www.conventionalcommits.org/):
 [optional footer]
 ```
 
-Tipe:
-- `feat`: Fitur baru
-- `fix`: Perbaikan bug
-- `docs`: Dokumentasi
-- `style`: Gaya kode
-- `refactor`: Refaktorisasi kode
-- `perf`: Performa
-- `test`: Pengujian
-- `chore`: Pemeliharaan
+Types:
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Code style
+- `refactor`: Code refactoring
+- `perf`: Performance
+- `test`: Testing
+- `chore`: Maintenance
 
-Contoh:
+Example:
 ```
-feat(animations): tambah animasi zoom-rotate baru
+feat(animations): add new zoom-rotate animation
 
-- Menambahkan animasi baru yang menggabungkan zoom dan rotasi
-- Memperbarui dokumentasi
-- Menambah pengujian
+- Added new animation combining zoom and rotation
+- Updated documentation
+- Added tests
 
 Closes #123
 ```
 
-## 📚 Dokumentasi
+## 📚 Documentation
 
-- Perbarui komentar JSDoc untuk semua metode publik
-- Jaga README.md tetap terbarui
-- Perbarui katalog animasi
-- Tambahkan contoh untuk fitur baru
+- Update JSDoc comments for all public methods
+- Keep README.md up to date
+- Update animation catalog
+- Add examples for new features
 
-Contoh JSDoc:
+JSDoc Example:
 ```javascript
 /**
- * Menginisialisasi animasi untuk sebuah elemen
- * @param {HTMLElement} element - Elemen target
- * @param {Object} options - Opsi animasi
- * @param {number} [options.duration=1000] - Durasi animasi dalam ms
- * @param {string} [options.easing='ease'] - Fungsi timing animasi
+ * Initializes animation for an element
+ * @param {HTMLElement} element - Target element
+ * @param {Object} options - Animation options
+ * @param {number} [options.duration=1000] - Animation duration in ms
+ * @param {string} [options.easing='ease'] - Animation timing function
  * @returns {void}
  */
 ```
 
-## 🧪 Panduan Pengujian
+## 🧪 Testing Guidelines
 
-### Struktur Pengujian
-Pengujian diorganisir dalam beberapa kategori utama:
+### Test Structure
+Tests are organized into main categories:
 
-1. **Pengujian Inisialisasi**
+1. **Initialization Tests**
 ```javascript
 describe('VIKS Animation', () => {
-  it('harus menginisialisasi dengan opsi default', () => {
+  it('should initialize with default options', () => {
     const element = document.createElement('div');
     const viks = new VIKS(element);
     expect(viks.options).toEqual({
@@ -169,10 +169,10 @@ describe('VIKS Animation', () => {
 });
 ```
 
-2. **Pengujian Parameter Animasi**
+2. **Animation Parameter Tests**
 ```javascript
-describe('Parameter Animasi', () => {
-  it('harus mendapatkan nilai delay yang benar', () => {
+describe('Animation Parameters', () => {
+  it('should get correct delay value', () => {
     const element = document.createElement('div');
     element.setAttribute('data-viks', 'fade-up delay-500');
     container.appendChild(element);
@@ -184,99 +184,99 @@ describe('Parameter Animasi', () => {
 });
 ```
 
-### Persyaratan Pengujian
+### Testing Requirements
 
-- Minimal 80% cakupan untuk kode baru
-- Semua tipe animasi harus memiliki pengujian
-- Uji kompatibilitas browser
-- Sertakan pengujian untuk:
-  - Parameter animasi
-  - Deteksi elemen
-  - Perilaku scroll
-  - Penerapan/penghapusan animasi
-  - Event window
-  - Fungsionalitas Intersection Observer
+- Minimum 80% coverage for new code
+- All animation types must have tests
+- Test browser compatibility
+- Include tests for:
+  - Animation parameters
+  - Element detection
+  - Scroll behavior
+  - Animation application/removal
+  - Window events
+  - Intersection Observer functionality
 
-### Menjalankan Pengujian
+### Running Tests
 
 ```bash
-# Jalankan semua pengujian
+# Run all tests
 npm test
 
-# Jalankan pengujian dengan cakupan
+# Run tests with coverage
 npm test -- --coverage
 
-# Jalankan file pengujian tertentu
+# Run specific test file
 npm test -- path/to/test-file.test.js
 
-# Jalankan pengujian dalam mode watch
+# Run tests in watch mode
 npm test -- --watch
 ```
 
-## 👥 Komunitas
+## 👥 Community
 
-### Mendapatkan Bantuan
+### Getting Help
 - GitHub Issues
-- Komunitas Discord
-- Tag Stack Overflow: `viks-animation`
+- Discord Community
+- Stack Overflow Tag: `viks-animation`
 
-### Kontributor Reguler
-- Akses ke pertemuan pengembangan
-- Disebutkan di README.md
-- Akses awal ke fitur baru
+### Regular Contributors
+- Access to development meetings
+- Mentioned in README.md
+- Early access to new features
 
-## 🏆 Pengakuan
+## 🏆 Recognition
 
-Semua kontributor akan:
-- Terdaftar di CONTRIBUTORS.md
-- Disebutkan di catatan rilis
-- Diberi kredit di dokumentasi
+All contributors will be:
+- Listed in CONTRIBUTORS.md
+- Mentioned in release notes
+- Credited in documentation
 
-## 📋 Template Issue
+## 📋 Issue Templates
 
-### Template Laporan Bug
+### Bug Report Template
 ```markdown
-**Deskripsi:**
-[Deskripsi jelas tentang bug]
+**Description:**
+[Clear description of the bug]
 
-**Langkah-langkah untuk Mereproduksi:**
-1. [Langkah Pertama]
-2. [Langkah Kedua]
-3. [Dan seterusnya...]
+**Steps to Reproduce:**
+1. [First Step]
+2. [Second Step]
+3. [And so on...]
 
-**Perilaku yang diharapkan:**
-[Apa yang Anda harapkan terjadi]
+**Expected Behavior:**
+[What you expected to happen]
 
-**Perilaku aktual:**
-[Apa yang sebenarnya terjadi]
+**Actual Behavior:**
+[What actually happened]
 
-**Lingkungan:**
+**Environment:**
 - Browser:
 - OS:
-- Versi VIKS:
+- VIKS Version:
 ```
 
-### Template Permintaan Fitur
+### Feature Request Template
 ```markdown
-**Deskripsi Fitur:**
-[Jelaskan fiturnya]
+**Feature Description:**
+[Describe the feature]
 
-**Kasus Penggunaan:**
-[Mengapa fitur ini diperlukan?]
+**Use Case:**
+[Why is this feature needed?]
 
-**Solusi yang Diusulkan:**
-[Ide Anda untuk implementasi]
+**Proposed Solution:**
+[Your implementation ideas]
 
-**Alternatif yang Dipertimbangkan:**
-[Solusi lain yang telah Anda pertimbangkan]
+**Alternatives Considered:**
+[Other solutions you've considered]
 ```
 
 ---
 
 <div align="center">
 
-[![Questions](https://img.shields.io/badge/Ada_Pertanyaan%3F-Tanyakan!-00FFFF?style=for-the-badge&logoColor=black)](https://github.com/Vixsry/viks-animation/issues)
+[![Questions](https://img.shields.io/badge/Have_Questions%3F-Ask_Away!-00FFFF?style=for-the-badge&logoColor=black)](https://github.com/Vixsry/viks-animation/issues)
 
-Terima kasih telah berkontribusi pada VIKS Animation Library! 🎉
+Thank you for contributing to VIKS Animation Library! 🎉
 
 </div>
