@@ -89,13 +89,15 @@ yarn add viks-a
 ```html
 <!-- VIKS ANIMATION CSS
 ========================-->
-<link rel="stylesheet" href="https://unpkg.com/viks-a@latest/dist/viks.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.css">
 ```
 
 ```html
 <!-- VIKS ANIMATION JS
 ========================-->
-<script src="https://unpkg.com/viks-a@latest/dist/viks.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js
+"></script>
 ```
 
 ---
