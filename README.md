@@ -23,12 +23,6 @@
 
 </div>
 
-<div align="center">
-
-![License](https://img.shields.io/badge/license-MIT-black?style=flat-square)
-![Downloads](https://img.shields.io/badge/downloads-1k%2Fmonth-aqua?style=flat-square)
-
-</div>
 
 <div align="center">
   <strong>Lightweight JavaScript library for smooth and engaging scroll animations</strong>
