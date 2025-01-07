@@ -8,6 +8,8 @@
  * Instagram : https://www.instagram.com/viksry12
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
  */
+import './viks.css';
+console.log('The viks.js file was successfully built!');
 
 const VIKS = {
   init(customConfig = {}) {
