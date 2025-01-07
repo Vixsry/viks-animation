@@ -1,49 +1,30 @@
 {
   "name": "viks-a",
   "version": "1.0.5",
-  "description": "Library JavaScript ringan untuk animasi scroll yang halus dan menarik.",
+  "description": "A lightweight JavaScript library for smooth and attractive scroll animations.",
   "main": "src/viks.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "lint": "eslint src/**/*.js",
-    "prettify": "prettier --write \"src/**/*.{js,css,html}\""
-  },
+  "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
+  "build-css": "node build-css.js",
+  "build": "npm run build-js && npm run build-css"
+},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vixsry/viks-animation.git"
+    "url": "git+https://github.com/Vixsry/viks-animation.git"
   },
   "keywords": [
-    "animation",
-    "scroll",
-    "javascript",
-    "library",
+    "viks-a",
     "viks-animation"
   ],
-  "author": "Vixsry <kingvikvik25@gmail.com>",
+  "author": "VIKRI AHPAD TANTOWI",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vixsry/viks-animation/issues"
   },
-  "homepage": "https://github.com/Vixsry/viks-animation#readme",
+  "website": "https://viksanimation.my.id/",
+  "homepage": "https://github.com/Vixsry/viks-animation",
   "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "eslint": "^8.45.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "mini-css-extract-plugin": "^2.7.6",
-    "prettier": "^3.0.0",
-    "sass": "^1.66.1",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.0"
-  },
-  "dependencies": {
-    "core-js": "^3.32.2"
+    "terser": "^5.10.0",
+    "cssnano": "^7.0.6"
   }
 }
