@@ -9,7 +9,7 @@
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
  */
 import './viks.css';
-console.log('The viks.js file was successfully built!');
+console.log('%c The viks.js file was successfully built! ', 'background: #00ffff; color: black; font-weight: bold; padding: 5px; border-radius: 5px;');
 
 const VIKS = {
   init(customConfig = {}) {
