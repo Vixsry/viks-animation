@@ -1,0 +1,34 @@
+{
+  "name": "Vixsry/viks-a",
+  "description": "Bring Your Website to Life with Animations.",
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "viks-animation",
+    "viks-a",
+    "web"
+  ],
+  "homepage": "https://getbootstrap.com/",
+  "authors": [
+    {
+      "name": "VIKRI AHPAD TANTOWI",
+      "email": "viksanimation@gmail.com"
+    },
+    {
+      "name": "VIKS DEV",
+      "email": "viksdev@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Vixsry/viks-animation/issues"
+  },
+  "license": "MIT",
+  "replace": {
+    "viksdev/viks-a": "self.version"
+  }
+}
