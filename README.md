@@ -87,13 +87,12 @@ yarn add viks-a
 
 ### CDN
 ```html
-<!-- VIKS ANIMATION CSS
+<!-- Stylesheet
 ========================-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.css">
-```
 
-```html
-<!-- VIKS ANIMATION JS
+
+<!-- JavaScript
 ========================-->
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
