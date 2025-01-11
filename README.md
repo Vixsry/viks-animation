@@ -430,7 +430,7 @@ Your support helps me to continue creating and maintaining projects! ✨
 
 <h2 align="center">DEMO</h2>
 
-See the full demo in the [viks-animation-demo.html](./viks-animation-demo.html) file.
+See the full demo in the [Website](https://viksanimation.my.id) file.
 
 ## 📝 License
 This project is [MIT](./LICENSE) licensed.
