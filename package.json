@@ -3,6 +3,8 @@
   "version": "1.0.5",
   "description": "Lightweight JavaScript library for smooth and engaging scroll animations",
   "main": "src/viks.js",
+  "style": "dist/viks.min.css",
+  "browser": "dist/viks.min.js",
   "scripts": {
   "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
   "build-css": "node build-css.js",
