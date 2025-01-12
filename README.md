@@ -14,7 +14,7 @@
 
 <div align="center">
 
-<a href="https://github.com/Vixsry/viks-swip/blob/main/LICENSE" target="_blank">
+<a href="https://github.com/Vixsry/viks-animation/blob/main/LICENSE" target="_blank">
   <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=flat-square" alt="License Badge">
 </a>
 <a href="https://example.com/dashboard" target="_blank">
