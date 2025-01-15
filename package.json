@@ -5,28 +5,56 @@
   "main": "src/viks.js",
   "style": "dist/viks.min.css",
   "browser": "dist/viks.min.js",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
-  "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
-  "build-css": "node build-css.js",
-  "build": "npm run build-js && npm run build-css"
-},
+    "build-js": "terser src/viks.js --compress --mangle --output dist/viks.min.js",
+    "build-css": "node build-css.js",
+    "build": "npm run build-js && npm run build-css",
+    "test": "jest",
+    "lint": "eslint src",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vixsry/viks-animation.git"
   },
   "keywords": [
     "viks-a",
-    "viks-animation"
+    "viks-animation",
+    "scroll-animation",
+    "javascript-animation",
+    "smooth-scroll"
   ],
   "author": "VIKRI AHPAD TANTOWI",
+  "contributors": [
+    {
+      "name": "Vikri Ahpad Tantowi",
+      "email": "your.email@example.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vixsry/viks-animation/issues"
   },
   "website": "https://viksanimation.my.id",
   "homepage": "https://github.com/Vixsry/viks-animation",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "devDependencies": {
     "terser": "^5.10.0",
-    "cssnano": "^7.0.6"
+    "cssnano": "^7.0.6",
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Vixsry"
   }
 }
