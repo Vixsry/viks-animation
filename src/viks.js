@@ -8,9 +8,6 @@
  * Instagram : https://www.instagram.com/viksry12
  * Facebook  : https://www.facebook.com/share/1E17jqYu34/
  */
-import './viks.css';
-
-
 const VIKS = {
   init(customConfig = {}) {
     this.elements = document.querySelectorAll('[data-viks]');
