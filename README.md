@@ -108,7 +108,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 Get started by including production-ready Viks Animation CSS and JavaScript via CDN without any build steps required.
 
-<div>1.Create a new file index.html in the root of your project.</div>
+<div><strong>1.Create a new file index.html in the root of your project.</strong></div>
 
 ```html
 <!doctype html>
