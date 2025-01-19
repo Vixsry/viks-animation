@@ -33,7 +33,7 @@
   <a href="https://github.com/Vixsry">Vixsry</a>
 </div>
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h1 align="center">
   <strong>INTRODUCTION</strong>
@@ -509,7 +509,7 @@ Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](.
 
 [Live Demo](https://yourusername.github.io/viks) • [Documentation](https://yourusername.github.io/viks/docs) • [Examples](https://yourusername.github.io/viks/examples)
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 
 </div>
 
