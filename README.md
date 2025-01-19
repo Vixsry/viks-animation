@@ -35,6 +35,12 @@
 
 ---
 
+<div align="center">
+  <strong>Introduction</strong>
+</div>
+
+---
+
 ## ✨ Features
 
 🎯 **Core Features**
