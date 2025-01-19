@@ -160,6 +160,9 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
 
+4.Install via package manager 
+Install the Viks Animation source Sass and JavaScript files via npm, YARN, or Composer.
+
 ### NPM
 ```bash
 npm install viks-a --save
