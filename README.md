@@ -110,7 +110,7 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 
 <div><strong>1.Create a new file index.html in the root of your project.</strong></div>
 
-
+## EXAMPLE
 ```html
 <!doctype html>
 <html lang="en">
