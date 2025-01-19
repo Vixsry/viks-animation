@@ -147,6 +147,8 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 </html>
 ```
 
+3.Open the page in your preferred browser to view your Viks Animation page. Now you can start building with Viks Animation by creating your own Animations , adding dozens of animations , and taking advantage of our official examples .
+
 ### CDN
 ```html
 <!-- Stylesheet -->
