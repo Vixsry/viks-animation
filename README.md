@@ -43,7 +43,7 @@
 
 VIKS Animation is a modern animation library designed to make websites and applications more dynamic with minimal effort. It is beginner-friendly and suitable for professionals, offering both basic and advanced configuration options to cater to diverse animation needs.
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## ✨ Features
 
@@ -68,7 +68,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 - 3D Rotations
 - Custom Animations
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h2 align="center">CONTACT DEVELOPER</h2>
 <div align="center">
@@ -82,7 +82,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 </div>
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h2 align="center">AVAILABLE ANIMATIONS</h2>
 
@@ -98,7 +98,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 </div>
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h2 align="center">INSTALLATION</h2>
 
@@ -132,7 +132,7 @@ yarn add viks-a
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
 
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h2 align="center">MANUAL INSTALLATION</h2>
 
@@ -148,7 +148,7 @@ yarn add viks-a
 <!-- JAVA SCRIPT -->
 <script src="path/to/viks.js"></script>
 ```
----
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <h2 align="center">INITIALIZATION</h2>
 
