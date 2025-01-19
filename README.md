@@ -456,3 +456,211 @@ Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+
+
+<div align="center">
+
+# 🌊 VIKS Animation Library 🌊
+
+[![Version](https://img.shields.io/badge/version-1.0.0-00ffff.svg?style=for-the-badge)](https://github.com/yourusername/viks)
+[![License](https://img.shields.io/badge/license-MIT-00ffff.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Stars](https://img.shields.io/badge/stars-★★★★★-00ffff.svg?style=for-the-badge)](https://github.com/yourusername/viks)
+[![Downloads](https://img.shields.io/badge/downloads-10k/month-00ffff.svg?style=for-the-badge)](https://github.com/yourusername/viks)
+
+<p align="center">
+  <strong>🚀 Professional Animation Library for Modern Web Applications 🚀</strong>
+</p>
+
+[Live Demo](https://yourusername.github.io/viks) • [Documentation](https://yourusername.github.io/viks/docs) • [Examples](https://yourusername.github.io/viks/examples)
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+## ✨ Features
+
+🎯 **Core Features**
+- Smooth Scroll Animation
+- Number Animation
+- 3D Transformations
+- Multiple Easing Functions
+- Cross-Browser Support
+
+🛠️ **Technical Highlights**
+- Zero Dependencies
+- Lightweight (~12KB gzipped)
+- High Performance
+- Mobile-First Design
+- TypeScript Support
+
+🎨 **Animation Types**
+- Fade Effects
+- Slide Animations
+- Scale Transformations
+- 3D Rotations
+- Custom Animations
+
+## 📦 Installation
+
+```bash
+# Using npm
+npm install viks-animation
+
+# Using yarn
+yarn add viks-animation
+
+# Using pnpm
+pnpm add viks-animation
+```
+
+## 🚀 Quick Start
+
+### Basic Usage
+
+```html
+<!-- Add VIKS to your project -->
+<script src="viks.min.js"></script>
+
+<!-- Add animation attributes to elements -->
+<div data-viks="fade-up">
+  Animated content
+</div>
+```
+
+### JavaScript Initialization
+
+```javascript
+// Initialize VIKS
+VIKS.init({
+  duration: 1000,
+  offset: 120,
+  easing: 'ease-in-out'
+});
+
+// Initialize Smooth Scroll
+VIKSSmooth.init({
+  duration: 800,
+  easing: 'easeOutQuint'
+});
+
+// Initialize Number Animation
+VIKSNumber.init();
+
+// Initialize 3D Effects
+new Viks3D();
+```
+
+## 🎮 Animation Types
+
+### Fade Animations
+```html
+<div data-viks="fade-up">Fade Up</div>
+<div data-viks="fade-down">Fade Down</div>
+<div data-viks="fade-left">Fade Left</div>
+<div data-viks="fade-right">Fade Right</div>
+```
+
+### 3D Animations
+```html
+<div data-viks="3D">
+  <h2>3D Card</h2>
+  <p>Hover to see the effect</p>
+</div>
+```
+
+### Number Animation
+```html
+<span data-viks="type-nbr" data-value="1000">0</span>
+```
+
+## ⚙️ Configuration
+
+### Global Settings
+
+```javascript
+VIKS.init({
+  // Animation settings
+  duration: 1000,
+  offset: 120,
+  easing: 'ease-in-out',
+  
+  // Animation control
+  once: false,
+  mirror: true,
+  
+  // Special settings
+  disable: false,
+  debounceDelay: 50,
+  throttleDelay: 99
+});
+```
+
+### Smooth Scroll Settings
+
+```javascript
+VIKSSmooth.init({
+  duration: 800,
+  offset: -50,
+  easing: 'easeOutQuint',
+  updateHistory: true,
+  smoothWheel: true,
+  smoothTouch: true
+});
+```
+
+## 🎨 Custom Easing Functions
+
+```javascript
+// Add custom easing
+VIKS.easingMap['custom-bounce'] = 'cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+
+// Use custom easing
+<div data-viks="custom-bounce">Custom Animation</div>
+```
+
+## 🌐 Browser Support
+
+| Browser | Supported Versions |
+|---------|-------------------|
+| Chrome  | 49+              |
+| Firefox | 52+              |
+| Safari  | 10+              |
+| Edge    | 14+              |
+| Opera   | 36+              |
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors
+- Inspired by modern animation libraries
+- Built with love for the web community
+
+<div align="center">
+
+## 💖 Support
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Development-00ffff.svg?style=for-the-badge)](https://ko-fi.com/yourusername)
+[![Patreon](https://img.shields.io/badge/Patreon-Become%20a%20Patron-00ffff.svg?style=for-the-badge)](https://patreon.com/yourusername)
+
+</div>
+
+---
+
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a>
+</div>
+
