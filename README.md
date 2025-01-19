@@ -108,7 +108,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 Get started by including production-ready Viks Animation CSS and JavaScript via CDN without any build steps required.
 
-1.Create a new file index.html in the root of your project.
+## 1.Create a new file index.html in the root of your project.
 
 ```html
 <!doctype html>
@@ -124,7 +124,8 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 </html>
 ```
 
-2.Include Viks Animation CSS and JS. Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
+## 2.Include Viks Animation CSS and JS.
+Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
 
 ```html
 <!doctype html>
@@ -147,7 +148,8 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 </html>
 ```
 
-3.Open the page in your preferred browser to view your Viks Animation page. Now you can start building with Viks Animation by creating your own Animations , adding dozens of animations , and taking advantage of our official examples .
+3.Open the page in your preferred browser to view your Viks Animation page.
+Now you can start building with Viks Animation by creating your own Animations , adding dozens of animations , and taking advantage of our official examples .
 
 ### CDN
 ```html
@@ -160,7 +162,7 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
 
-4.Install via package manager 
+## 4.Install via package manager 
 Install the Viks Animation source Sass and JavaScript files via npm, YARN, or Composer.
 
 ### NPM
