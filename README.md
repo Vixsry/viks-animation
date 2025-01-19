@@ -1,8 +1,4 @@
-<h1 align="center">
-  <span style="background: linear-gradient(45deg, #00FFFF, #40E0D0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-     🌊 VIKS ANIMATION
-  </span>
-</h1>
+<h1 align="center">VIKS ANIMATION</h1>
 
 <div align="center">
   <img src="assets/viks-swip-logo.png" alt="VIKS SWIP Logo" width="200"/>
