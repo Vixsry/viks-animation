@@ -108,6 +108,45 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 Get started by including production-ready Viks Animation CSS and JavaScript via CDN without any build steps required.
 
+1.Create a new file index.html in the root of your project.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viks Animation</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
+```
+
+2.Include Viks Animation CSS and JS. Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viks Animatiom demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.css">
+  </head>
+  <body>
+    <h1 data-viks="fade-up">Hello, world!</h1>
+    <h2 data-viks="fade-down">Hello, world!</h2>
+    <h3 data-viks="fade-right">Hello, world!</h3>
+    <h4 data-viks="fade-up">Hello, world!</h4>
+    <h5 data-viks="fade-up">Hello, world!</h5>
+    <h6 data-viks="fade-up">Hello, world!</h6>
+    <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
+  </body>
+</html>
+```
+
 ### CDN
 ```html
 <!-- Stylesheet -->
