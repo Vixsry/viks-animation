@@ -35,9 +35,9 @@
 
 ---
 
-<div align="center">
+<h1 align="center">
   <strong>INTRODUCTION</strong>
-</div>
+</h1>
 
 ---
 
