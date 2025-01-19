@@ -125,7 +125,7 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 </html>
 ```
 
-## 2.Include Viks Animation CSS and JS.
+<div><strong>2.Include Viks Animation CSS and JS.</strong></div>
 Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
 
 ```html
