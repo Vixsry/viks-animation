@@ -35,6 +35,31 @@
 
 ---
 
+## ✨ Features
+
+🎯 **Core Features**
+- Smooth Scroll Animation
+- Number Animation
+- 3D Transformations
+- Multiple Easing Functions
+- Cross-Browser Support
+
+🛠️ **Technical Highlights**
+- Zero Dependencies
+- Lightweight (~12KB gzipped)
+- High Performance
+- Mobile-First Design
+- TypeScript Support
+
+🎨 **Animation Types**
+- Fade Effects
+- Slide Animations
+- Scale Transformations
+- 3D Rotations
+- Custom Animations
+
+---
+
 <h2 align="center">CONTACT DEVELOPER</h2>
 <div align="center">
   
@@ -478,28 +503,7 @@ Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](.
 
 </div>
 
-## ✨ Features
 
-🎯 **Core Features**
-- Smooth Scroll Animation
-- Number Animation
-- 3D Transformations
-- Multiple Easing Functions
-- Cross-Browser Support
-
-🛠️ **Technical Highlights**
-- Zero Dependencies
-- Lightweight (~12KB gzipped)
-- High Performance
-- Mobile-First Design
-- TypeScript Support
-
-🎨 **Animation Types**
-- Fade Effects
-- Slide Animations
-- Scale Transformations
-- 3D Rotations
-- Custom Animations
 
 ## 📦 Installation
 
