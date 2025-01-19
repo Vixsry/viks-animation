@@ -106,11 +106,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 </div>
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
-
 Get started by including production-ready Viks Animation CSS and JavaScript via CDN without any build steps required.
-
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### CDN
 ```html
@@ -121,6 +117,8 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### NPM
 ```bash
