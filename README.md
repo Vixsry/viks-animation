@@ -39,8 +39,8 @@
   <strong>INTRODUCTION</strong>
 </h1>
 
-## Apa itu VIKS Animation?
-VIKS Animation adalah pustaka animasi modern yang dirancang untuk membuat website dan aplikasi lebih hidup dengan upaya minimal. Pustaka ini sangat ramah bagi developer pemula maupun profesional, karena menyediakan konfigurasi dasar (basic) hingga tingkat lanjut (advance) untuk memenuhi berbagai kebutuhan animasi.
+What is VIKS Animation?
+VIKS Animation is a modern animation library designed to make websites and applications more dynamic with minimal effort. It is beginner-friendly and suitable for professionals, offering both basic and advanced configuration options to cater to diverse animation needs.
 
 ---
 
