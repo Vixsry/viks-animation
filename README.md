@@ -118,8 +118,6 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 <script src="https://cdn.jsdelivr.net/npm/viks-a@latest/dist/viks.min.js"></script>
 ```
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
-
 ### NPM
 ```bash
 npm install viks-a --save
