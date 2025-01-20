@@ -395,30 +395,26 @@ or
 ### EVENT CALLBACK
 
 ```javascript
-// Callbacks for various events
-function onStart(element) {
-    console.log('Animation started:', element);
-}
+// Initialize VIKS with callbacks
+VIKS.init()
+  .on('beforeInit', (event) => {
+    console.log('Before initialization:', event.timestamp);
+  })
+  .on('afterAnimate', (event) => {
+    console.log('Element animated:', event.element);
+  })
+  .on('onScroll', (event) => {
+    console.log('Scroll position:', event.scrollY);
+  });
 
-function onComplete(element) {
-    console.log('Animation completed:', element);
-}
+// Remove specific callback
+const scrollHandler = (event) => {
+  console.log('Scroll:', event.scrollY);
+};
 
-function onReset(element) {
-    console.log('Animation reset:', element);
-}
-
-// Listeners for VIKS built-in events
-document.addEventListener('viksAnimated', function(event) {
-    const element = event.target; // Element being animated
-    onStart(element);
-    onComplete(element);
-});
-
-document.addEventListener('viksHidden', function(event) {
-    const element = event.target; // Element whose animation was removed
-    onReset(element);
-});
+VIKS.on('onScroll', scrollHandler);
+// Later...
+VIKS.off('onScroll', scrollHandler);
 ```
 
 ---
