@@ -311,7 +311,7 @@ VIKS.init({
 ```html
 <!-- COMBINE MULTIPLE ATTRIBUTES 
 ================================================================-->
-<div data-viks="fade-up delay-1000 duration-2000 easing-ease-out">
+<div data-viks="fade-up delay-1000 duration-2000">
   Multiple attributes combination
 </div>
 ```
