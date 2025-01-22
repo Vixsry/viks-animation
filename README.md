@@ -71,6 +71,8 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 <div align="center"><strong>SOCIAL MEDIA</strong></div>
 <div align="center">
 
@@ -84,6 +86,8 @@ VIKS Animation is a modern animation library designed to make websites and appli
 [![Facebook](https://img.shields.io/badge/Facebook-black?style=for-the-badge&logo=facebook&logoColor=aqua)](https://www.facebook.com/share/19aKzAtBeZ/)
 
 </div>
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
