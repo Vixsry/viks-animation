@@ -71,7 +71,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
-<h2 align="center">SOCIAL MEDIA</h2>
+<div align="center">SOCIAL MEDIA</div>
 <div align="center">
   
 [![Email](https://img.shields.io/badge/Email-aqua?style=for-the-badge&logo=gmail&logoColor=black)](mailto:viksry@proton.me)
@@ -85,7 +85,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
-<h2 align="center">AVAILABLE ANIMATIONS</h2>
+<div align="center">AVAILABLE ANIMATIONS</div>
 
 <div align="center">
 
@@ -101,7 +101,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
-<h2 align="center">INSTALLATION</h2>
+<div align="center">INSTALLATION</div>
 
 <div align="center">
 
@@ -134,7 +134,11 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 
 Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
 
-## EXAMPLE
+<div align="left">
+  <strong>EXAMPLE</strong>
+</div>
+
+![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ```html
 <!doctype html>
