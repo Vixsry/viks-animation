@@ -1,12 +1,8 @@
-/*!
+/**
  * MIT LISENSI
- * Copyright (c) 27 Nov 2024 VIKRI AHPAD TANTOWI
- * Lisensi   : https://github.com/Vixsry/viks-animation/blob/main/LICENSE
- * Website   : https://viksanimation.my.id/
- * Github    : https://github.com/Vixsry/viks-animation
- * Author    : VIKRI AHPAD TANTOWI
- * Instagram : https://www.instagram.com/viksry12
- * Facebook  : https://www.facebook.com/share/1E17jqYu34/
+ * Copyright © 27 Nov 2024 VIKRI AHPAD TANTOWI
+ * https://github.com/Vixsry/viks-animation/blob/main/LICENSE
+ * Website : https://viksanimation.my.id/
  */
 const VIKS = {
   init(customConfig = {}) {
@@ -14,7 +10,9 @@ const VIKS = {
     this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
 
-    // Mapping easing names to CSS cubic-bezier values
+    /**
+     * Mapping Easing Viks Animation 
+     */
     this.easingMap = {
       'linear': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
       'ease': 'cubic-bezier(0.250, 0.100, 0.250, 1.000)',
@@ -48,7 +46,10 @@ const VIKS = {
       'ease-elastic': 'cubic-bezier(0.5, 0.75, 0.150, 1.650)',
       'ease-bounce': 'cubic-bezier(0.3, 2.1, 0.6, 0.8)',
     };
-
+    
+    /**
+     * Default Setting Viks Animation
+     */
     this.config = {
       thresholdTop: 0.1,
       thresholdBottom: 0.1,
@@ -81,7 +82,9 @@ const VIKS = {
   },
 
 applyGlobalStyles() {
-    // Create style element for global settings
+    /**
+     * Create style element for global settings Viks Animation
+     */
     const styleEl = document.createElement('style');
     const easingValue = this.easingMap[this.config.easing] || this.config.easing;
 
@@ -103,7 +106,9 @@ applyGlobalStyles() {
   },
 
   setupEventListeners() {
-    // Debounced resize handler
+    /**
+     * Debounced resize handler Viks Animation
+     */
     let resizeTimeout;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimeout);
@@ -116,7 +121,9 @@ applyGlobalStyles() {
       }, this.config.debounceDelay);
     });
 
-    // Scroll performance optimization
+    /**
+     * Scroll performance optimization Viks Animation
+     */
     let lastScroll = 0;
     let ticking = false;
 
@@ -133,7 +140,9 @@ applyGlobalStyles() {
       }
     }, { passive: true });
 
-    // Handle page visibility changes
+    /**
+     * Handle page visibility changes Viks Animation
+     */
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'visible') {
         this.elements.forEach(element => {
@@ -154,7 +163,9 @@ applyGlobalStyles() {
       entries.forEach(entry => {
         const element = entry.target;
         
-        // Check element-specific animation controls
+        /**
+         * Check element-specific animation controls Viks Animation
+         */
         const animateTop = element.getAttribute('data-viks-animation-top') !== 'off' && this.config.animateTop;
         const animateBottom = element.getAttribute('data-viks-animation-bottom') !== 'off' && this.config.animateBottom;
         const once = element.getAttribute('data-viks-once') || this.config.once;
@@ -168,7 +179,9 @@ applyGlobalStyles() {
           const boundingRect = element.getBoundingClientRect();
           const scrollingUp = boundingRect.top > this.windowHeight;
 
-          // Apply animation based on scroll direction and configuration
+          /**
+           * Apply animation based on scroll direction and configuration Viks Animation
+           */
           if ((scrollingUp && animateTop) || (!scrollingUp && animateBottom)) {
             if (!once || !this.initializedElements.has(element)) {
               this.removeAnimation(element);
@@ -184,14 +197,18 @@ applyGlobalStyles() {
     });
   },
   
-  // Method to update animation settings
+  /**
+   * Method to update animation settings Viks Animation
+   */
   updateAnimationSettings(settings = {}) {
     this.config = {
       ...this.config,
       ...settings
     };
     
-    // Refresh all elements with new settings
+    /**
+     * Refresh all elements with new settings Viks Animation
+     */
     this.refreshAll();
   },
 
@@ -234,19 +251,25 @@ applyGlobalStyles() {
     const duration = this.getDuration(element);
     const easing = this.getEasing(element);
 
-    // Apply transition properties
+    /**
+     * Apply transition properties Viks Animation
+     */
     element.style.transitionDuration = `${duration}ms`;
     element.style.transitionDelay = `${delay}ms`;
     element.style.transitionTimingFunction = easing;
 
-    // Get easing from data attribute or config
+    /**
+     * Get easing from data attribute or config Viks Animation
+     */
     const easingAttr = element.getAttribute('data-viks');
     const easingMatch = Object.keys(this.easingMap).find(key => easingAttr?.includes(key));
     const easingValue = this.easingMap[easingMatch] || this.easingMap[easing] || easing;
 
     element.style.transitionTimingFunction = easingValue;
 
-    // Rest of the applyAnimation logic...
+    /**
+     * Rest of the applyAnimation logic... Viks Animation
+     */
     requestAnimationFrame(() => {
       element.classList.add(this.config.animatedClassName);
     });
@@ -257,18 +280,24 @@ applyGlobalStyles() {
     }));
 
 
-    // Handle custom animations
+    /**
+     * Handle custom animations , Viks Animation
+     */
     const customAnimation = element.getAttribute('data-viks-custom');
     if (customAnimation) {
       this.applyCustomAnimation(element, customAnimation);
     }
 
-    // Add animation class
+    /**
+     * Add animation class Viks Animation
+     */
     requestAnimationFrame(() => {
       element.classList.add(this.config.animatedClassName);
     });
 
-    // Dispatch custom event
+    /**
+     * Dispatch custom event Viks Animation 3D
+     */
     element.dispatchEvent(new CustomEvent('viksAnimated', {
       bubbles: true,
       detail: { animation: element.getAttribute('data-viks') }
@@ -283,7 +312,9 @@ applyGlobalStyles() {
       'pulse': () => {
         element.style.animation = 'viksPulse 1s cubic-bezier(0.4, 0, 0.6, 1)';
       }
-      // Add more custom animations here
+      /**
+       * Add more custom animations here
+       */
     };
 
     if (customAnimations[animation]) {
@@ -344,7 +375,9 @@ applyGlobalStyles() {
     return match ? parseInt(match[1]) : null;
   },
 
-  // Utility method to check if element should animate
+  /**
+   * Utility method to check if element should animate Viks Animation
+   */
   shouldAnimate(element) {
     if (this.config.disable) return false;
     if (element.getAttribute('data-viks-disabled') === 'true') return false;
@@ -356,7 +389,9 @@ applyGlobalStyles() {
     return viewportWidth >= minWidth && viewportWidth <= maxWidth;
   },
 
-  // Method to manually refresh specific element
+  /**
+   * Method to manually refresh specific element Viks Animation
+   */
   refresh(element) {
     if (element && element.hasAttribute('data-viks')) {
       this.updateElementPosition(element);
@@ -365,28 +400,36 @@ applyGlobalStyles() {
     }
   },
 
-  // Method to refresh all elements
+  /**
+   * Method to refresh all elements Viks Animation
+   */
   refreshAll() {
     this.elements.forEach(element => {
       this.refresh(element);
     });
   },
 
-  // Method to manually trigger animation
+  /**
+   * Method to manually trigger animation ,Viks Animation
+   */
   animate(element) {
     if (element && this.shouldAnimate(element)) {
       this.applyAnimation(element);
     }
   },
 
-  // Method to manually hide element
+  /**
+   * Method to manually hide element Viks Animation
+   */
   hide(element) {
     if (element) {
       this.removeAnimation(element);
     }
   },
 
-  // Method to destroy instance
+  /**
+   * Method to destroy instance Viks Animation
+   */
   destroy() {
     this.elements.forEach(element => {
       element.classList.remove(this.config.initClassName);
@@ -405,10 +448,14 @@ applyGlobalStyles() {
   }
 };
 
-// viks-number.js
+/**
+ * "CONST Viks Animation Number"
+ */
 const VIKSNumber = {
   init() {
-    // Get all elements with data-viks containing "type-text"
+    /**
+     * Get all elements with data-viks containing "type-text" Viks Number Viks Animation
+     */
     this.elements = document.querySelectorAll('[data-viks*="type-nbr"]');
     this.setupAnimations();
     this.initializeObserver();
@@ -416,12 +463,16 @@ const VIKSNumber = {
 
   setupAnimations() {
     this.elements.forEach(element => {
-      // Store the original number
+      /**
+       * Store the original number Viks Animation
+       */
       const finalNumber = parseFloat(element.textContent);
       element.setAttribute('data-final-number', finalNumber);
       element.textContent = '0';
 
-      // Add necessary styles
+      /**
+       * Add necessary styles Viks Animation "Number"
+       */
       element.style.visibility = 'visible';
       element.style.opacity = '1';
     });
@@ -456,19 +507,25 @@ const VIKSNumber = {
         const element = entry.target;
         const config = this.parseAttributes(element);
 
-        // Determine animation direction based on attributes
+        /**
+         * Determine animation direction based on attributes Viks Animation Number
+         */
         const animateTop = config.topOn || (!config.topOff && !config.bottomOn);
         const animateBottom = config.bottomOn || (!config.bottomOff && !config.topOn);
 
         if (entry.isIntersecting) {
-          // Check scroll direction
+          /**
+           * Check scroll direction Viks Animation Number
+           */
           const scrollingDown = entry.boundingClientRect.top < entry.rootBounds.top;
 
           if ((scrollingDown && animateBottom) || (!scrollingDown && animateTop)) {
             this.animateNumber(element, config);
           }
         } else {
-          // Reset number when out of view based on configuration
+          /**
+           * Reset number when out of view based on configuration Viks Animation "Number"
+           */
           if ((entry.boundingClientRect.top > 0 && animateTop) || 
               (entry.boundingClientRect.top < 0 && animateBottom)) {
             element.textContent = '0';
@@ -508,7 +565,9 @@ const VIKSNumber = {
   }
 };
 
-// 3D Animation Library
+/**
+ * Class Viks 3D Animation
+ */
 class Viks3D {
   constructor() {
     this.elements = [];
@@ -516,23 +575,31 @@ class Viks3D {
   }
 
   init() {
-    // Mencari semua elemen dengan atribut data-viks="3D"
+    /**
+     * Searches for all elements with the data-viks="3D" attribute Viks 3D Animation
+     */
     this.elements = Array.from(document.querySelectorAll('[data-viks="3D"]'));
   this.setupAnimations();
     this.setupAnimations();
 
-    // Menambahkan event listener untuk interaksi mouse
+    /**
+     * Adding event listeners for mouse interactions Viks 3D Animation
+     */
     document.addEventListener('mousemove', this.handleMouseMove.bind(this));
   }
 
   setupAnimations() {
     this.elements.forEach(element => {
-      // Menambahkan CSS dasar
+      /**
+       * Added basic CSS Viks 3D Animation
+       */
       element.style.transition = 'transform 0.3s ease-out';
       element.style.transformStyle = 'preserve-3d';
       element.style.perspective = '1000px';
 
-      // Menambahkan event listeners
+      /**
+       * Added event listeners
+       */
       element.addEventListener('mouseenter', () => this.handleHover(element, true));
       element.addEventListener('mouseleave', () => this.handleHover(element, false));
     });
@@ -544,15 +611,21 @@ class Viks3D {
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
 
-      // Menghitung posisi relatif mouse
+      /**
+       * Calculating the relative position of the mouse Viks 3D Animation
+       */
       const mouseX = event.clientX - centerX;
       const mouseY = event.clientY - centerY;
 
-      // Menghitung rotasi berdasarkan posisi mouse
+      /**
+       * Calculate rotation based on mouse position Viks 3D Animation
+       */
       const rotateX = (mouseY / rect.height) * 20;
       const rotateY = (mouseX / rect.width) * 20;
 
-      // Terapkan transformasi
+      /**
+       * Apply transformation Viks 3d Animation
+       */
       element.style.transform = `
         rotateX(${-rotateX}deg) 
         rotateY(${rotateY}deg)
@@ -567,14 +640,18 @@ class Viks3D {
     }
   }
 
-  // Metode untuk menambahkan efek bayangan
+  /**
+   * Methods for adding shadow effects 3D Viks Animation
+   */
   addShadow() {
     this.elements.forEach(element => {
       element.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
     });
   }
 
-  // Metode untuk menambahkan efek parallax
+  /**
+   * Methods for adding parallax effects 3D Viks Animation
+   */
   addParallax(depth = 30) {
     this.elements.forEach(element => {
       const children = element.children;
@@ -585,7 +662,9 @@ class Viks3D {
   }
 }
 
-// CSS untuk animasi
+/**
+ * CSS for animation 3D
+ */
 const style = document.createElement('style');
 style.textContent = `
   [data-viks="3D"] {
@@ -606,7 +685,9 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Export as modules if supported
+/**
+ * Export as modules if supported Viks Animation
+ */
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { VIKS, VIKSNumber, Viks3D };
 } else if (typeof define === 'function' && define.amd) {
