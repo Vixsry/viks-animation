@@ -1,4 +1,4 @@
-/**
+/*!
  * MIT LISENSI
  * Copyright © 27 Nov 2024 VIKRI AHPAD TANTOWI
  * https://github.com/Vixsry/viks-animation/blob/main/LICENSE
