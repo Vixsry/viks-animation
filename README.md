@@ -65,17 +65,11 @@ VIKS Animation is a modern animation library designed to make websites and appli
 - 3D Rotations
 - Custom Animations
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
-
 ---
-
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <div align="center"><strong>SOCIAL MEDIA</strong></div>
 <div align="center">
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
-  
 [![Email](https://img.shields.io/badge/Email-aqua?style=for-the-badge&logo=gmail&logoColor=black)](mailto:viksry@proton.me)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=aqua)](https://www.linkedin.com/in/viksry)
 [![Instagram](https://img.shields.io/badge/Instagram-aqua?style=for-the-badge&logo=instagram&logoColor=black)](https://www.instagram.com/viksry12)
