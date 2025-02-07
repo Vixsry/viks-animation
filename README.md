@@ -39,13 +39,6 @@
 <div><strong>What is VIKS Animation?</strong></div>
 VIKS Animation is a modern animation library designed to make websites and applications more dynamic with minimal effort. It is beginner-friendly and suitable for professionals, offering both basic and advanced configuration options to cater to diverse animation needs.
 
-
-<div align="center">
-
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,nodejs,python,java,docker,kubernetes,aws)](https://skillicons.dev)
-
-</div>
-
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 🎯 **Core Features**
