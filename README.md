@@ -87,9 +87,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
 
 </div>
 
----
-
-<div align="center"><strong>INSTALLATION</strong></div>
+<h2 align="center">INSTALLATION</h2>
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
