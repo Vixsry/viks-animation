@@ -124,11 +124,7 @@ Get started by including production-ready Viks Animation CSS and JavaScript via 
 
 Place a <link> tag inside the <head> for our CSS, and a <script> tag for our JavaScript bundle (including Popper to position the dropdown, popper, and tooltip) before the closing </body>.
 
-<div align="left">
-  <strong>EXAMPLE</strong>
-</div>
-
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+## EXAMPLE
 
 ```html
 <!doctype html>
