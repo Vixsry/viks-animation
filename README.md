@@ -27,7 +27,6 @@
   <a href="https://github.com/Vixsry">Vixsry</a>
 </div>
 
-![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <div align="center">
   <strong>INTRODUCTION</strong>
