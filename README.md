@@ -513,17 +513,6 @@ This project is [MIT](./LICENSE) licensed.
 
 <div align="center">
 
-[![Website Soon](https://img.shields.io/badge/Portfolio-aqua?style=for-the-badge&logo=github&logoColor=black)](-#)
-[![Star](https://img.shields.io/badge/Star-black?style=for-the-badge&logo=github&logoColor=aqua)](https://github.com/Vixsry/viks-animation)
-
-<h3><span style="color: aqua">✨ "Bringing Life to Web Elements" ✨</span></h3>
-
-</div>
-
----
-
-<div align="center">
-
 Made with ❤️ by [Vixsry](https://github.com/Vixsry)
 
 </div>
