@@ -28,9 +28,9 @@
 </div>
 
 
-<div align="center">
+<h1 align="center">
   <strong>INTRODUCTION</strong>
-</div>
+</h1>
 
 ![Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
