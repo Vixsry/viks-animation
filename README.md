@@ -7,14 +7,12 @@
 </div>
 
 <div align="center">
-
 <a href="https://github.com/Vixsry/viks-animation/blob/main/LICENSE" target="_blank">
   <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=flat-square" alt="License Badge">
 </a>
 <a href="https://example.com/dashboard" target="_blank">
   <img src="https://img.shields.io/badge/DOWNLOAD-1K%2FMONTH-aqua?style=flat-square" alt="Downloads Badge">
 </a>
-
 </div>
 
 <div align="center">
