@@ -6,7 +6,15 @@
 </p>
 </div>
 
+
 <div align="center">
+![Chrome](https://img.shields.io/badge/Chrome-Latest-aqua?style=flat-square&logo=google-chrome&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-Latest-aqua?style=flat-square&logo=firefox&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-Latest-aqua?style=flat-square&logo=safari&logoColor=white)
+![Edge](https://img.shields.io/badge/Edge-Latest-aqua?style=flat-square&logo=microsoft-edge&logoColor=white)
+![Opera](https://img.shields.io/badge/Opera-Latest-aqua?style=flat-square&logo=opera&logoColor=white)
+
+
 <a href="https://github.com/Vixsry/viks-animation/blob/main/LICENSE" target="_blank">
   <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=flat-square" alt="License Badge">
 </a>
@@ -15,15 +23,6 @@
 </a>
 </div>
 
-<div align="center">
-
-![Chrome](https://img.shields.io/badge/Chrome-Latest-aqua?style=flat-square&logo=google-chrome&logoColor=white)
-![Firefox](https://img.shields.io/badge/Firefox-Latest-aqua?style=flat-square&logo=firefox&logoColor=white)
-![Safari](https://img.shields.io/badge/Safari-Latest-aqua?style=flat-square&logo=safari&logoColor=white)
-![Edge](https://img.shields.io/badge/Edge-Latest-aqua?style=flat-square&logo=microsoft-edge&logoColor=white)
-![Opera](https://img.shields.io/badge/Opera-Latest-aqua?style=flat-square&logo=opera&logoColor=white)
-
-</div>
 
 <div align="center">
   <strong>Lightweight JavaScript library for smooth and engaging scroll animations</strong>
