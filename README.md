@@ -34,9 +34,7 @@
   <strong>Lightweight JavaScript library for smooth and engaging scroll animations</strong>
 </div>
 
-<h1 align="center">
-  <strong>INTRODUCTION</strong>
-</h1>
+<h1 align="center">INTRODUCTION</h1>
 
 <div><strong>What is VIKS Animation?</strong></div>
 VIKS Animation is a modern animation library designed to make websites and applications more dynamic with minimal effort. It is beginner-friendly and suitable for professionals, offering both basic and advanced configuration options to cater to diverse animation needs.
