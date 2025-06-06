@@ -586,5 +586,5 @@ VIKS.off('onScroll', scrollHandler);
 <p align="center">Contributions, issues, and feature requests are welcome! See <a href="./CONTRIBUTING.md">CONTRIBUTING.md</a></p>
 
 <div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/MeViksry">Vixsry</a></p>
+  <p>Made with ❤️ by <a href="https://github.com/MeViksry">VIKRI AHPAD TANTOWI</a></p>
 </div>
