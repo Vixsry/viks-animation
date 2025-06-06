@@ -78,7 +78,7 @@ VIKS Animation is a modern animation library designed to make websites and appli
     <a href="https://www.linkedin.com/in/viksry">
       <img src="https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=aqua" alt="LinkedIn">
     </a>
-    <a href="https://www.instagram.com/viksry12">
+    <a href="https://www.instagram.com/meviksry">
       <img src="https://img.shields.io/badge/Instagram-aqua?style=for-the-badge&logo=instagram&logoColor=black" alt="Instagram">
     </a>
     <a href="https://www.tiktok.com/@viksry">
